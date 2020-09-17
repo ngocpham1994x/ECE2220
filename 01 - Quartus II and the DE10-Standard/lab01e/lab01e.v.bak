@@ -1,0 +1,12 @@
+module full_adder(a,b,cin,sum,count);
+
+	input a, b, cin;
+	output sum, cout;
+	wire w0,w1,w2;
+	xor u0(w0,a,b);
+	xor u1(sum,w0,cin);
+	and u2(w1,cin,w0);
+	and u3(w2,b,a);
+	or u4(count,w1,w2);
+	
+endmodule

@@ -1,0 +1,18 @@
+|lab01e
+a => u0.IN0
+a => u3.IN0
+b => u0.IN1
+b => u3.IN1
+cin => u1.IN1
+cin => u2.IN1
+sum << u1.DB_MAX_OUTPUT_PORT_TYPE
+cout << u4.DB_MAX_OUTPUT_PORT_TYPE
+f[0] << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+f[1] << <GND>
+f[2] << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+f[3] << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+f[4] << u1.DB_MAX_OUTPUT_PORT_TYPE
+f[5] << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+f[6] << u4.DB_MAX_OUTPUT_PORT_TYPE
+
+

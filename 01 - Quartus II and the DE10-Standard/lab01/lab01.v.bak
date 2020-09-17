@@ -1,0 +1,7 @@
+module lab01(x,y,f)
+	input x,y;
+	output f;
+	
+	and(f,x,y);
+	
+endmodule

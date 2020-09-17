@@ -1,0 +1,12 @@
+|lab01
+x => comb.IN0
+x => comb.IN0
+x => comb.IN0
+y => comb.IN1
+y => comb.IN1
+y => comb.IN1
+f1 << comb.DB_MAX_OUTPUT_PORT_TYPE
+f2 << comb.DB_MAX_OUTPUT_PORT_TYPE
+f3 << comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
