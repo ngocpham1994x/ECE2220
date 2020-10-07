@@ -1,0 +1,53 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "motor",
+					"strict" : false
+				},
+				{
+					"name" : "e_pressed",
+					"strict" : false
+				},
+				{
+					"name" : "LED[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[3]",
+					"strict" : false
+				},
+				{
+					"name" : "pwr",
+					"strict" : false
+				},
+				{
+					"name" : "door",
+					"strict" : false
+				},
+				{
+					"name" : "water_level",
+					"strict" : false
+				},
+				{
+					"name" : "flow_lim",
+					"strict" : false
+				},
+				{
+					"name" : "e_stop",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

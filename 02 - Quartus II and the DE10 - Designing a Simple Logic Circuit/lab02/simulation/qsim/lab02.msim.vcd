@@ -1,0 +1,279 @@
+$comment
+	File created using the following command:
+		vcd file lab02.msim.vcd -direction
+$end
+$date
+	Thu Sep 24 17:19:22 2020
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module lab02_vlg_vec_tst $end
+$var reg 1 ! door $end
+$var reg 1 " e_stop $end
+$var reg 1 # flow_lim $end
+$var reg 1 $ pwr $end
+$var reg 1 % water_level $end
+$var wire 1 & LED [3] $end
+$var wire 1 ' LED [2] $end
+$var wire 1 ( LED [1] $end
+$var wire 1 ) LED [0] $end
+$var wire 1 * e_pressed $end
+$var wire 1 + motor $end
+
+$scope module i1 $end
+$var wire 1 , gnd $end
+$var wire 1 - vcc $end
+$var wire 1 . unknown $end
+$var tri1 1 / devclrn $end
+$var tri1 1 0 devpor $end
+$var tri1 1 1 devoe $end
+$var wire 1 2 ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 3 door~input_o $end
+$var wire 1 4 water_level~input_o $end
+$var wire 1 5 pwr~input_o $end
+$var wire 1 6 flow_lim~input_o $end
+$var wire 1 7 e_stop~input_o $end
+$var wire 1 8 e_pressed~reg0_q $end
+$var wire 1 9 e_pressed~0_combout $end
+$var wire 1 : e_pressed~reg0feeder_combout $end
+$var wire 1 ; e_pressed~reg0DUPLICATE_q $end
+$var wire 1 < motor~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+0#
+0$
+0%
+0)
+0(
+0'
+0&
+0*
+0+
+0,
+1-
+x.
+1/
+10
+11
+02
+03
+04
+05
+06
+17
+08
+19
+1:
+0;
+0<
+$end
+#10000
+1$
+15
+1)
+#20000
+1!
+0$
+13
+05
+0)
+1(
+#30000
+1$
+15
+1)
+#40000
+1%
+0!
+0$
+14
+03
+05
+0)
+0(
+1'
+#50000
+1$
+15
+1)
+#60000
+1!
+0$
+13
+05
+0)
+1(
+#70000
+1$
+15
+1)
+1<
+1+
+#80000
+1#
+0%
+0!
+0$
+16
+04
+03
+05
+0)
+0(
+0'
+1&
+0<
+0+
+#90000
+1$
+15
+1)
+#100000
+1!
+0$
+13
+05
+0)
+1(
+#110000
+1$
+15
+1)
+#120000
+1%
+0!
+0$
+14
+03
+05
+0)
+0(
+1'
+#130000
+1$
+15
+1)
+#140000
+1!
+0$
+13
+05
+0)
+1(
+#150000
+1$
+15
+1)
+#160000
+0"
+0#
+0%
+0!
+0$
+07
+06
+04
+03
+05
+0)
+0(
+0'
+0&
+18
+1;
+1*
+09
+0:
+#170000
+1$
+15
+1)
+#180000
+1!
+0$
+13
+05
+0)
+1(
+#190000
+1$
+15
+1)
+#200000
+1%
+0!
+0$
+14
+03
+05
+0)
+0(
+1'
+#210000
+1$
+15
+1)
+#220000
+1!
+0$
+13
+05
+0)
+1(
+#230000
+1$
+15
+1)
+#240000
+1#
+0%
+0!
+0$
+16
+04
+03
+05
+0)
+0(
+0'
+1&
+#250000
+1$
+15
+1)
+#260000
+1!
+0$
+13
+05
+0)
+1(
+#270000
+1$
+15
+1)
+#280000
+1%
+0!
+0$
+14
+03
+05
+0)
+0(
+1'
+#290000
+1$
+15
+1)
+#300000

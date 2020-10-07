@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab01e
-Wed Sep 16 22:35:38 2020
+Thu Sep 17 16:31:44 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Sep 16 22:35:38 2020       ;
+; Analysis & Synthesis Status     ; Successful - Thu Sep 17 16:31:44 2020       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; lab01e                                      ;
 ; Top-level Entity Name           ; lab01e                                      ;
@@ -165,13 +165,13 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                            ;
-+--------------------------------------+-----------------+------------------------+---------------------------------------+---------+
-; File Name with User-Entered Path     ; Used in Netlist ; File Type              ; File Name with Absolute Path          ; Library ;
-+--------------------------------------+-----------------+------------------------+---------------------------------------+---------+
-; ../../../../../../Desktop/Verilog1.v ; yes             ; User Verilog HDL File  ; C:/Users/Ngoc Pham/Desktop/Verilog1.v ;         ;
-+--------------------------------------+-----------------+------------------------+---------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                   ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                               ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------+---------+
+; lab01e.v                         ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/01 - Quartus II and the DE10-Standard/lab01e/lab01e.v ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------+
@@ -258,15 +258,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Wed Sep 16 22:35:22 2020
+    Info: Processing started: Thu Sep 17 16:31:25 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab01e -c lab01e
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /users/ngoc pham/desktop/verilog1.v
-    Info (12023): Found entity 1: lab01e File: C:/Users/Ngoc Pham/Desktop/Verilog1.v Line: 1
+Warning (12019): Can't analyze file -- file ../../../../../../Desktop/Verilog1.v is missing
+Warning (12125): Using design file lab01e.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: lab01e File: C:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/01 - Quartus II and the DE10-Standard/lab01e/lab01e.v Line: 1
 Info (12127): Elaborating entity "lab01e" for the top level hierarchy
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "f[1]" is stuck at GND File: C:/Users/Ngoc Pham/Desktop/Verilog1.v Line: 5
+    Warning (13410): Pin "f[1]" is stuck at GND File: C:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/01 - Quartus II and the DE10-Standard/lab01e/lab01e.v Line: 5
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -274,10 +275,10 @@ Info (21057): Implemented 17 device resources after synthesis - the final resour
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 9 output pins
     Info (21061): Implemented 5 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 4805 megabytes
-    Info: Processing ended: Wed Sep 16 22:35:38 2020
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:28
+    Info: Processing ended: Thu Sep 17 16:31:44 2020
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:31
 
 

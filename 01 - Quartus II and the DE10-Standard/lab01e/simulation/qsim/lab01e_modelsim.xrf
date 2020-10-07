@@ -1,8 +1,8 @@
 vendor_name = ModelSim
 source_file = 1, C:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/01 - Quartus II and the DE10-Standard/lab01e/Waveform.vwf
 source_file = 1, output_files/Waveform.vwf
-source_file = 1, C:/Users/Ngoc Pham/Desktop/Verilog1.v
-source_file = 1, C:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/01 - Quartus II and the DE10-Standard/lab01e/db/lab01e.cbx.xml
+source_file = 1, ../../../../../../Desktop/Verilog1.v
+source_file = 1, C:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/01 - Quartus II and the DE10-Standard/lab01e/lab01e.v
 design_name = lab01e
 instance = comp, \sum~output , sum~output, lab01e, 1
 instance = comp, \cout~output , cout~output, lab01e, 1

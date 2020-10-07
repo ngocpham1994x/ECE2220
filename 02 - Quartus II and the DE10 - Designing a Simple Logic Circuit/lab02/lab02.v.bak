@@ -1,0 +1,27 @@
+module lab02 (motor,pwr,door,water_level,flow_lim,e_stop,e_pressed,LED);
+
+	input pwr,door,water_level,flow_lim; // 4 physical sensors (switches)
+	input e_stop;  		// physical e_stop (push button)
+	output motor;  		// physical motor output (LED[9])
+	
+	output [3:0] LED;  	// 4 physical LEDs [0:3] represent states of 4 physical switches
+	reg e_pressed = 0;   // register represents state of emergency (triggered ON=1 or CLEAR=0)
+	output e_pressed;    // physical LED[5] represents state of emergency
+	
+	assign motor = pwr & door & water_level & ~flow_lim & ~e_pressed ;
+	
+	assign LED[0] = pwr;
+	assign LED[1] = door;
+	assign LED[2] = water_level;
+	assign LED[3] = flow_lim;
+	
+	
+	always @ (negedge e_stop)      // triggered by negative edge
+		begin
+		
+			e_pressed = ~e_pressed;  // whenever the negative edge is triggered by e_stop push button, switch state of emergency to ON to CLEAR, vice versa
+		
+		end
+	
+	
+endmodule

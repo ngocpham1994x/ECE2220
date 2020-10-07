@@ -1,5 +1,5 @@
 Fitter report for lab01e
-Wed Sep 16 22:36:22 2020
+Thu Sep 17 16:32:30 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -57,7 +57,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Wed Sep 16 22:36:22 2020       ;
+; Fitter Status                   ; Successful - Thu Sep 17 16:32:30 2020       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; lab01e                                      ;
 ; Top-level Entity Name           ; lab01e                                      ;
@@ -153,7 +153,7 @@ refer to the applicable agreement for further details.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.1%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processors 3-4         ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -1666,10 +1666,10 @@ Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:04
 Info (144001): Generated suppressed messages file C:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/01 - Quartus II and the DE10-Standard/lab01e/output_files/lab01e.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 6461 megabytes
-    Info: Processing ended: Wed Sep 16 22:36:22 2020
-    Info: Elapsed time: 00:00:43
-    Info: Total CPU time (on all processors): 00:01:00
+    Info: Peak virtual memory: 6457 megabytes
+    Info: Processing ended: Thu Sep 17 16:32:31 2020
+    Info: Elapsed time: 00:00:46
+    Info: Total CPU time (on all processors): 00:01:03
 
 
 +----------------------------+

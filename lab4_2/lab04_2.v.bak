@@ -1,0 +1,10 @@
+module lab04_2(in, out, select, LED);
+	input [3:0]in;
+	input [1:0]select;
+	output reg out;
+	output [9:0]LED;
+	
+// part 2: Implement circuit using AND, OR and NOT gates
+
+	always @(*)
+	out = 

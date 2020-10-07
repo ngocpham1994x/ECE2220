@@ -1,5 +1,5 @@
 EDA Netlist Writer report for lab01
-Wed Sep 16 19:08:47 2020
+Thu Sep 17 16:28:59 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Sep 16 19:08:47 2020 ;
+; EDA Netlist Writer Status ; Successful - Thu Sep 17 16:28:59 2020 ;
 ; Revision Name             ; lab01                                 ;
 ; Top-level Entity Name     ; lab01                                 ;
 ; Family                    ; Cyclone V                             ;
@@ -93,14 +93,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Wed Sep 16 19:08:45 2020
+    Info: Processing started: Thu Sep 17 16:28:56 2020
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/01 - Quartus II and the DE10-Standard/lab01/simulation/qsim/" lab01 -c lab01
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file lab01.vo in folder "C:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/01 - Quartus II and the DE10-Standard/lab01/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4710 megabytes
-    Info: Processing ended: Wed Sep 16 19:08:47 2020
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Thu Sep 17 16:28:59 2020
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
 

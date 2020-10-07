@@ -1,0 +1,18 @@
+|lab02
+motor <= motor.DB_MAX_OUTPUT_PORT_TYPE
+pwr => motor.IN0
+pwr => LED[0].DATAIN
+door => motor.IN1
+door => LED[1].DATAIN
+water_level => motor.IN1
+water_level => LED[2].DATAIN
+flow_lim => LED[3].DATAIN
+flow_lim => motor.IN1
+e_stop => e_pressed~reg0.CLK
+e_pressed <= e_pressed~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LED[0] <= pwr.DB_MAX_OUTPUT_PORT_TYPE
+LED[1] <= door.DB_MAX_OUTPUT_PORT_TYPE
+LED[2] <= water_level.DB_MAX_OUTPUT_PORT_TYPE
+LED[3] <= flow_lim.DB_MAX_OUTPUT_PORT_TYPE
+
+
