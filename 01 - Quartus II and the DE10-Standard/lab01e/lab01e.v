@@ -1,3 +1,5 @@
+// 2-bit full adder
+
 module lab01e(a,b,cin,sum,cout,f);
 
 	input a, b, cin;

@@ -20,6 +20,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
@@ -38,6 +39,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script_timing>
 <hdl_lang>verilog</hdl_lang>
 </simulation_settings>*/
@@ -68,7 +70,7 @@ HEADER
 	VERSION = 1;
 	TIME_UNIT = ns;
 	DATA_OFFSET = 0.0;
-	DATA_DURATION = 200.0;
+	DATA_DURATION = 1000.0;
 	SIMULATION_TIME = 0.0;
 	GRID_PHASE = 0.0;
 	GRID_PERIOD = 10.0;
@@ -152,7 +154,7 @@ TRANSITION_LIST("in[0]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 10;
+			REPEAT = 50;
 			LEVEL 0 FOR 10.0;
 			LEVEL 1 FOR 10.0;
 		}
@@ -166,12 +168,10 @@ TRANSITION_LIST("in[1]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 6;
-			LEVEL 0 FOR 15.0;
-			LEVEL 1 FOR 15.0;
+			REPEAT = 25;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 20.0;
 		}
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 5.0;
 	}
 }
 
@@ -182,10 +182,11 @@ TRANSITION_LIST("in[2]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 5;
-			LEVEL 0 FOR 20.0;
-			LEVEL 1 FOR 20.0;
+			REPEAT = 12;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 40.0;
 		}
+		LEVEL 0 FOR 40.0;
 	}
 }
 
@@ -196,10 +197,11 @@ TRANSITION_LIST("in[3]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 4;
-			LEVEL 0 FOR 25.0;
-			LEVEL 1 FOR 25.0;
+			REPEAT = 6;
+			LEVEL 0 FOR 80.0;
+			LEVEL 1 FOR 80.0;
 		}
+		LEVEL 0 FOR 40.0;
 	}
 }
 
@@ -210,12 +212,12 @@ TRANSITION_LIST("select[8]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 6;
-			LEVEL 0 FOR 15.0;
-			LEVEL 1 FOR 15.0;
+			REPEAT = 1;
+			LEVEL 0 FOR 320.0;
+			LEVEL 1 FOR 320.0;
 		}
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 320.0;
+		LEVEL 1 FOR 40.0;
 	}
 }
 
@@ -226,10 +228,11 @@ TRANSITION_LIST("select[9]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 10;
-			LEVEL 0 FOR 10.0;
-			LEVEL 1 FOR 10.0;
+			REPEAT = 3;
+			LEVEL 0 FOR 160.0;
+			LEVEL 1 FOR 160.0;
 		}
+		LEVEL 0 FOR 40.0;
 	}
 }
 
@@ -238,7 +241,8 @@ TRANSITION_LIST("out")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 200.0;
+		LEVEL X FOR 199.0;
+		LEVEL 0 FOR 801.0;
 	}
 }
 

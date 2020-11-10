@@ -1,4 +1,5 @@
 vendor_name = ModelSim
+source_file = 1, C:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/04 - 4x1 Multiplexer/lab4_3/Waveform.vwf
 source_file = 1, C:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/04 - 4x1 Multiplexer/lab4_3/lab04_3.v
 design_name = lab04_3
 instance = comp, \LED[0]~output , LED[0]~output, lab04_3, 1

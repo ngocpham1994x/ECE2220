@@ -1,0 +1,8 @@
+module lab06_c(in, out, z);
+input [7:0]in;
+input z;
+output [2:0]out;
+
+//part c: 
+
+endmodule

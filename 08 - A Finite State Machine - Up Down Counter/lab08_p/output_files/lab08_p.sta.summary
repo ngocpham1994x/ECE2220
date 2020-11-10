@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'clock'
+Slack : -6.403
+TNS   : -138.907
+
+Type  : Slow 1100mV 85C Model Setup 'clock_converter:comb_6|clock_1Hz'
+Slack : -2.255
+TNS   : -39.853
+
+Type  : Slow 1100mV 85C Model Hold 'clock'
+Slack : 0.475
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clock_converter:comb_6|clock_1Hz'
+Slack : 0.595
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : -0.394
+TNS   : -15.304
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock_converter:comb_6|clock_1Hz'
+Slack : -0.394
+TNS   : -14.330
+
+Type  : Slow 1100mV 0C Model Setup 'clock'
+Slack : -6.650
+TNS   : -141.227
+
+Type  : Slow 1100mV 0C Model Setup 'clock_converter:comb_6|clock_1Hz'
+Slack : -2.255
+TNS   : -39.381
+
+Type  : Slow 1100mV 0C Model Hold 'clock'
+Slack : 0.457
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clock_converter:comb_6|clock_1Hz'
+Slack : 0.559
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : -0.415
+TNS   : -16.457
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock_converter:comb_6|clock_1Hz'
+Slack : -0.394
+TNS   : -14.065
+
+Type  : Fast 1100mV 85C Model Setup 'clock'
+Slack : -3.460
+TNS   : -64.549
+
+Type  : Fast 1100mV 85C Model Setup 'clock_converter:comb_6|clock_1Hz'
+Slack : -1.100
+TNS   : -18.586
+
+Type  : Fast 1100mV 85C Model Hold 'clock'
+Slack : 0.261
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clock_converter:comb_6|clock_1Hz'
+Slack : 0.281
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : -0.430
+TNS   : -2.982
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock_converter:comb_6|clock_1Hz'
+Slack : -0.017
+TNS   : -0.296
+
+Type  : Fast 1100mV 0C Model Setup 'clock'
+Slack : -3.225
+TNS   : -59.333
+
+Type  : Fast 1100mV 0C Model Setup 'clock_converter:comb_6|clock_1Hz'
+Slack : -0.942
+TNS   : -15.845
+
+Type  : Fast 1100mV 0C Model Hold 'clock'
+Slack : 0.241
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clock_converter:comb_6|clock_1Hz'
+Slack : 0.246
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : -0.437
+TNS   : -2.961
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock_converter:comb_6|clock_1Hz'
+Slack : 0.017
+TNS   : 0.000
+
+------------------------------------------------------------

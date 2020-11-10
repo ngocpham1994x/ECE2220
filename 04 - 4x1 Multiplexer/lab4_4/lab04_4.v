@@ -5,21 +5,18 @@ module lab04_4( LED, in, select, out ); // 4:1 multiplexer
 	output reg out;       // output acts as register
 	
 	
-//part 3: using "case" statement
+//part 4: using one-liner if statement
+
 
 	always @ (select)
 	begin
-		case (select)  //2-bit selector
-			                      // S8 S9 out       LED[6] 
-			0: out = in[0];   // 0  0  input 0   LED[0]
-			1: out = in[1];   // 0  1  input 1   LED[1]
-			2: out = in[2];   // 1  0  input 2   LED[2]
-			3: out = in[3];   // 1  1  input 3   LED[3]
-			
-		endcase
-	end
+		out = (select[9]) ? (select[8] ? in[3] : in[2]) : (select[8] ? in[1] : in[0]);
 
+	end
+	
+	
 	// assign value of controlled elements to be represented on LED
+	
 	
 	assign LED[0] = in[0];  // LHS has to be assigned by the RHS, not the other way around
 	assign LED[1] = in[1];

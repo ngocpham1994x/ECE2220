@@ -1,0 +1,65 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "clock_1Hz",
+					"strict" : false
+				},
+				{
+					"name" : "SSD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD[6]",
+					"strict" : false
+				},
+				{
+					"name" : "reset_LED",
+					"strict" : false
+				},
+				{
+					"name" : "w_LED",
+					"strict" : false
+				},
+				{
+					"name" : "clock_LED",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "w",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,209 @@
+$comment
+	File created using the following command:
+		vcd file lab07_d1.msim.vcd -direction
+$end
+$date
+	Sun Nov 01 20:22:37 2020
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module lab07_d1_vlg_vec_tst $end
+$var reg 1 ! J $end
+$var reg 1 " K $end
+$var reg 1 # clock $end
+$var wire 1 $ LED0 $end
+$var wire 1 % LED1 $end
+$var wire 1 & LED9 $end
+$var wire 1 ' Q $end
+$var wire 1 ( Qbar $end
+
+$scope module i1 $end
+$var wire 1 ) gnd $end
+$var wire 1 * vcc $end
+$var wire 1 + unknown $end
+$var tri1 1 , devclrn $end
+$var tri1 1 - devpor $end
+$var tri1 1 . devoe $end
+$var wire 1 / ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 0 J~input_o $end
+$var wire 1 1 K~input_o $end
+$var wire 1 2 clock~input_o $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+0&
+1'
+0(
+0)
+1*
+x+
+1,
+1-
+1.
+0/
+00
+01
+02
+$end
+#10000
+1!
+10
+1$
+#15000
+1"
+11
+1%
+#20000
+1#
+0!
+12
+00
+0$
+1&
+#30000
+0"
+1!
+01
+10
+1$
+0%
+#40000
+0#
+0!
+02
+00
+0$
+0&
+#45000
+1"
+11
+1%
+#50000
+1!
+10
+1$
+#60000
+1#
+0"
+0!
+12
+01
+00
+0$
+0%
+1&
+#70000
+1!
+10
+1$
+#75000
+1"
+11
+1%
+#80000
+0#
+0!
+02
+00
+0$
+0&
+#90000
+0"
+1!
+01
+10
+1$
+0%
+#100000
+1#
+0!
+12
+00
+0$
+1&
+#105000
+1"
+11
+1%
+#110000
+1!
+10
+1$
+#120000
+0#
+0"
+0!
+02
+01
+00
+0$
+0%
+0&
+#130000
+1!
+10
+1$
+#135000
+1"
+11
+1%
+#140000
+1#
+0!
+12
+00
+0$
+1&
+#150000
+0"
+1!
+01
+10
+1$
+0%
+#160000
+0#
+0!
+02
+00
+0$
+0&
+#165000
+1"
+11
+1%
+#170000
+1!
+10
+1$
+#180000
+1#
+0"
+0!
+12
+01
+00
+0$
+0%
+1&
+#190000
+1!
+10
+1$
+#195000
+1"
+11
+1%
+#200000

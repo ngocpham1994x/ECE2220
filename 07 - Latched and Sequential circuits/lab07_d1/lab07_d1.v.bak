@@ -1,0 +1,18 @@
+module lab07_d1(J,K,clock,Q,Qbar,LED0,LED1,LED9)
+input J,K,clock;
+output Q,Qbar,LED0,LED1,LED9;
+
+wire out1, out2
+
+and a1(out1,J,Qbar,clock);
+and a2(out2,K,Q,clock);
+nor a3(Q,Qbar,out1);
+nor a4(Qbar,Q,out2);
+
+
+assign LED0 = J;
+assign LED1 = K,
+assign LED9 = clock;
+
+
+endmodule

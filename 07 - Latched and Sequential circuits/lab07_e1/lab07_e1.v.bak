@@ -1,0 +1,35 @@
+module lab07_e1 (q,qbar,J,K,key,LED0,LED1, LED9); //RS Latch
+
+input key,J,K;
+output q,qbar,LED9;
+
+wire s,r,Rint,clk,clk1,Sint,S1,R1,R1int,S1int;
+
+output wire LED0,LED1;
+
+assign LED9=clk;   //for led output 
+assign clk= ~key;    //clk input for RS latch slave
+assign clk1= key;    //clk input for RS latch Master
+
+and (r,J,qbar);
+and (s,K,q);
+
+
+//Master RS latch
+and a1 (Rint,r,clk1);   
+and a2 (Sint,s,clk1);
+nor a3 (R1,Rint,S1);
+nor a4 (S1,Sint,R1);
+
+
+//Slave Rs Latch
+and a5 (R1int,R1,clk);   
+and a6 (S1int,S1,clk);
+nor a7 (q,R1int,qbar);
+nor a8 (qbar,S1int,q);
+
+assign LED0=J;      //for led output
+assign LED1=K;      //for led output 
+
+
+endmodule 

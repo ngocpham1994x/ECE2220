@@ -25,7 +25,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Sun Oct 04 02:43:26 2020
+    Info: Processing started: Thu Oct 08 15:29:08 2020
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab04_3 -c lab04_3 --vector_source="C:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/04 - 4x1 Multiplexer/lab4_3/Waveform.vwf" --testbench_file="C:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/04 - 4x1 Multiplexer/lab4_3/simulation/qsim/Waveform.vwf.vt"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -53,13 +53,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Sun Oct 04 02:43:29 2020
+    Info: Processing started: Thu Oct 08 15:29:12 2020
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/04 - 4x1 Multiplexer/lab4_3/simulation/qsim/" lab04_3 -c lab04_3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file lab04_3.vo in folder "C:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/04 - 4x1 Multiplexer/lab4_3/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4710 megabytes
-    Info: Processing ended: Sun Oct 04 02:43:32 2020
+    Info: Processing ended: Thu Oct 08 15:29:15 2020
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
@@ -77,46 +77,47 @@ C:/intelFPGA/18.0/ModelSim/modelsim_ase/win32aloem/vsim -c -do lab04_3.do
 
 Reading C:/intelFPGA/18.0/ModelSim/modelsim_ase/tcl/vsim/pref.tcl
 
-# 10.5b
 
+# 10.5b
 
 # do lab04_3.do
 
+# ** Warning: (vlib-34) Library already exists at "work".
+
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:43:33 on Oct 04,2020
+# Start time: 15:29:16 on Oct 08,2020
 # vlog -work work lab04_3.vo 
 # -- Compiling module lab04_3
-
 # 
 # Top level modules:
 # 	lab04_3
-# End time: 02:43:33 on Oct 04,2020, Elapsed time: 0:00:00
+# End time: 15:29:16 on Oct 08,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:43:33 on Oct 04,2020
+# Start time: 15:29:16 on Oct 08,2020
 # vlog -work work Waveform.vwf.vt 
 # -- Compiling module lab04_3_vlg_vec_tst
 # 
 # Top level modules:
 # 	lab04_3_vlg_vec_tst
-# End time: 02:43:33 on Oct 04,2020, Elapsed time: 0:00:00
+# End time: 15:29:16 on Oct 08,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.lab04_3_vlg_vec_tst 
-# Start time: 02:43:33 on Oct 04,2020
+# Start time: 15:29:16 on Oct 08,2020
 # Loading work.lab04_3_vlg_vec_tst
 # Loading work.lab04_3
 # Loading cyclonev_ver.cyclonev_io_obuf
 # Loading cyclonev_ver.cyclonev_io_ibuf
 # Loading cyclonev_ver.cyclonev_lcell_comb
-# after#23
-
+# after#25
 # ** Note: $stop    : Waveform.vwf.vt(48)
-#    Time: 200 ns  Iteration: 0  Instance: /lab04_3_vlg_vec_tst
+#    Time: 1 us  Iteration: 0  Instance: /lab04_3_vlg_vec_tst
 # Break in Module lab04_3_vlg_vec_tst at Waveform.vwf.vt line 48
 # Stopped at Waveform.vwf.vt line 48
 
-# End time: 02:43:34 on Oct 04,2020, Elapsed time: 0:00:01
+# End time: 15:29:17 on Oct 08,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
@@ -129,7 +130,7 @@ Reading C:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/04 - 4x1 Multiplexe
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/04 - 4x1 Multiplexer/lab4_3/simulation/qsim/lab04_3_20201004024334.sim.vwf
+Writing the resulting VWF to C:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/04 - 4x1 Multiplexer/lab4_3/simulation/qsim/lab04_3_20201008152917.sim.vwf
 
 Finished VCD to VWF conversion.
 

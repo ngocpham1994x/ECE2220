@@ -1,0 +1,48 @@
+//top module
+
+module lab05(x,y,[]SSD);
+
+
+
+endmodule
+
+
+
+//bitwise full adder module
+
+module bitwise_adder();
+
+
+
+
+endmodule
+
+
+
+//adder module for all 4 bits
+
+module add_4bit();
+
+
+
+
+endmodule
+
+
+//Binary to decimal decoder module
+
+module BCD();
+
+
+
+
+endmodule
+
+
+//display decimal on Seven Segment Display module
+
+module SSD();
+
+
+
+endmodule

@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/06 - Decoders and Encoders/lab06_d/simulation/qsim
+vlab06_d
+!s110 1603404086
+!i10b 1
+!s100 edao8[3VFV?F3D[g2L0;Z1
+IcZo66R=]?hoG`hCQ2W<_^2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1603404085
+8lab06_d.vo
+Flab06_d.vo
+L0 31
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1603404086.000000
+!s107 lab06_d.vo|
+!s90 -work|work|lab06_d.vo|
+!i113 1
+Z3 o-work work
+Z4 tCvgOpt 0
+vlab06_d_vlg_vec_tst
+!s110 1603404087
+!i10b 1
+!s100 ^XMUc^8DCz4?>R`cY]Y4;3
+Ib:R<mfRfN8a5gUQCHh?M<2
+R1
+R0
+w1603404082
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R2
+r1
+!s85 0
+31
+!s108 1603404087.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R3
+R4

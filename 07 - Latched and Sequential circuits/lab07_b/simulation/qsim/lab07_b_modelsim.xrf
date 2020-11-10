@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/07 - Latched and Sequential circuits/lab07_b/lab07_b.v
+source_file = 1, C:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/07 - Latched and Sequential circuits/lab07_b/Waveform.vwf
+source_file = 1, C:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/07 - Latched and Sequential circuits/lab07_b/output_files/Chain1.cdf
+source_file = 1, C:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/07 - Latched and Sequential circuits/lab07_b/db/lab07_b.cbx.xml
+design_name = lab07_b
+instance = comp, \Q~output , Q~output, lab07_b, 1
+instance = comp, \Qbar~output , Qbar~output, lab07_b, 1
+instance = comp, \LED0~output , LED0~output, lab07_b, 1
+instance = comp, \LED1~output , LED1~output, lab07_b, 1
+instance = comp, \LED9~output , LED9~output, lab07_b, 1
+instance = comp, \S~input , S~input, lab07_b, 1
+instance = comp, \clock~input , clock~input, lab07_b, 1
+instance = comp, \R~input , R~input, lab07_b, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, lab07_b, 1

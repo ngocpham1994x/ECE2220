@@ -1,3 +1,4 @@
+// 7-segment display with error
 
 module lab03(SSD,sw);
 	input [3:0]sw;

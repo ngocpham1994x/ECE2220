@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/07 - Latched and Sequential circuits/lab07_d/simulation/qsim
+vlab07_d
+Z1 !s110 1604282604
+!i10b 1
+!s100 nVf]oAUV5?DYDLWe9>M7^3
+If7_niJUV=l>^XdAd[K^lE3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1604282602
+8lab07_d.vo
+Flab07_d.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1604282603.000000
+!s107 lab07_d.vo|
+!s90 -work|work|lab07_d.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vlab07_d_vlg_vec_tst
+R1
+!i10b 1
+!s100 WQUo?:3]5?8TYIG?9D3cR1
+IDZP2H@;4g0j=a61?4bbco3
+R2
+R0
+w1604282599
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1604282604.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+R5

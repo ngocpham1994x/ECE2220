@@ -1,5 +1,5 @@
 Flow report for lab04_4
-Sun Oct 04 02:51:04 2020
+Thu Oct 08 15:53:52 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Sun Oct 04 02:50:56 2020       ;
+; Flow Status                     ; Successful - Thu Oct 08 15:53:41 2020       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; lab04_4                                     ;
 ; Top-level Entity Name           ; lab04_4                                     ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/04/2020 02:49:46 ;
+; Start date & time ; 10/08/2020 15:52:25 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab04_4             ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 102228231882323.160179778511916        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 102228231882323.160219034412844        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                      ; --            ; --          ; --         ;
@@ -97,11 +97,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 4803 MB             ; 00:00:31                           ;
-; Fitter               ; 00:00:39     ; 1.0                     ; 6452 MB             ; 00:00:59                           ;
-; Assembler            ; 00:00:13     ; 1.0                     ; 4818 MB             ; 00:00:12                           ;
-; Timing Analyzer      ; 00:00:07     ; 1.0                     ; 5082 MB             ; 00:00:07                           ;
-; Total                ; 00:01:16     ; --                      ; --                  ; 00:01:49                           ;
+; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 4799 MB             ; 00:00:31                           ;
+; Fitter               ; 00:00:43     ; 1.0                     ; 6462 MB             ; 00:01:02                           ;
+; Assembler            ; 00:00:14     ; 1.0                     ; 4820 MB             ; 00:00:13                           ;
+; Timing Analyzer      ; 00:00:09     ; 1.0                     ; 5087 MB             ; 00:00:07                           ;
+; Total                ; 00:01:24     ; --                      ; --                  ; 00:01:53                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,0 +1,157 @@
+module lab08_p(clock,w,reset,clock_1Hz, SSD,reset_LED,w_LED,clock_LED);
+input clock,w,reset;
+output reg [6:0]SSD; 
+
+output reset_LED,w_LED,clock_LED;  //LEDs to be shown on the board
+
+output clock_1Hz;
+wire [3:0]Dbar;
+wire [3:0]d;
+reg [3:0]D;
+
+//combinational circuit 1  
+always@(posedge clock_1Hz) 
+
+begin 
+	if(reset == 1'b1)    //if reset is true
+		D = 0;
+	else                 //if reset is false
+		begin             //counting up when "w & K-map", counting down when "~w & K-map"
+			D[3] = ~w &(~d[2] & d[3] | d[3] & ~d[1] | d[3] & ~d[0] | d[0] & d[1] & d[2]& ~d[3]) |  //counting up OR
+					  w & (d[2] & d[3] | d[3] & d[1] | d[3] & d[0] | ~d[0] & ~d[1]& ~d[2] & ~d[3]);   //counting down
+					  
+			D[2] = ~w & (~d[1] & d[2] | d[2] & ~d[0] | ~d[2] & d[1] & d[0]) |  //counting up OR
+			        w & (d[1] & d[2] | d[0] & d[2] | ~d[2] & ~d[1] & ~d[0]);   //counting down
+					  
+			D[1] = ~w &(d[1] & ~d[0] | ~d[1] & d[0]) | //counting up OR
+			        w & (~d[1] & ~d[0] | d[1]& d[0]);  //counting down
+		
+			D[0] = ~d[0];
+
+		end
+end
+
+
+  
+
+
+//converting internal clock to slower clock
+clock_converter(clock,clock_1Hz);
+
+
+//D-latch for each bit
+Dlatch (D[3],d[3],Dbar[3],clock_1Hz);
+Dlatch (D[2],d[2],Dbar[2],clock_1Hz);
+Dlatch (D[1],d[1],Dbar[1],clock_1Hz);
+Dlatch (D[0],d[0],Dbar[0],clock_1Hz);
+
+
+//combinational circuit 2
+//displaying present state on SSD
+display_SSD(D,SSD);
+
+
+
+endmodule
+
+
+
+
+
+
+//submodules
+/////////////////////////////////////////////////////
+module clock_converter(internal_clock_25Hz,clock_1Hz);
+input internal_clock_25Hz;
+output reg clock_1Hz;
+
+//reg slow;
+reg [27:0]count;
+
+	always @(posedge internal_clock_25Hz)
+
+	begin 
+		count = count + 1;      //increment +ve edge counter on every positive edge iteration of the 25MHz inernal clock
+
+		if (count >=25_000_000) //if the +ve edge counter >= 25 000 000 edges 
+
+		begin 
+
+		count =0;               //then reset the 25Hz +ve edge counter to 0
+		clock_1Hz = ~clock_1Hz; //and set the 1Hz clock to be 1 ( or 0, depends on previous state of 1Hz clock)
+	
+		end 
+
+	end
+	
+endmodule
+
+
+
+
+
+/////////////////////////////////////////////////////
+module display_SSD(d,SSD);
+input [3:0]d;
+output [6:0]SSD;
+reg [6:0] SSD;
+
+	always @ (d)
+		case(d)
+								//    a  b  c  d  e  f  g
+		0: SSD=7'h40; //binary  0	0  0  0  0  0  1 
+		1: SSD=7'h79; //binary  1  0  0  1  1  1  1
+		2: SSD=7'h24; //binary  0  0  1  0  0  1  0 
+		3: SSD=7'h30; //binary  0  0  0  0  1  1  0 
+		4: SSD=7'h19; //binary  1  0  0  1  1  0  0 
+		5: SSD=7'h12; //binary  0  1  0  0  1  0  0 
+		6: SSD=7'h02; //binary  0  1  0  0  0  0  0 
+		7: SSD=7'h78; //binary  0  0  0  1  1  1  1 
+		8: SSD=7'h00; //binary  0  0  0  0  0  0  0 
+		9: SSD=7'h18; //binary  0  0  0  0  1  0  0 
+		
+		
+// Letter cases                a  b  c  d  e  f  g
+		10: SSD=7'h20; //binary  0  0  0  0  0  1  0 //a
+		11: SSD=7'h03; //binary  1  1  0  0  0  0  0 //b
+		12: SSD=7'h46; //binary  0  1  1  0  0  0  1 //c
+		13: SSD=7'h21; //binary  1  0  0  0  0  1  0 //d
+		14: SSD=7'h06; //binary  0  1  1  0  0  0  0 //e
+		15: SSD=7'h0E; //binary  0  1  1  1  0  0  0 //f
+		
+		endcase
+
+endmodule
+
+
+
+
+
+
+/////////////////////////////////////////////////////
+module Dlatch(D,q,qbar,clock);
+input D,clock;
+output q,qbar;
+
+
+SRlatch Dlatch(D,~D,q,qbar,clock);  //calling SRlatch module
+
+
+endmodule
+
+
+
+/////////////////////////////////////////////////////
+module SRlatch(S,R,Q,Qbar,clock);
+input S,R,clock;
+output Q,Qbar;
+
+wire Rint,Sint;
+
+and a1 (Rint,clock,R);  //1st AND gate, input: R,clock, output: Rint
+and a2 (Sint,clock,S);  //2nd AND gate, input: S,clock, output: Sint
+nor a3 (Q,Rint,Qbar);   //1st NOR gate, input: Rint,Qbar, output: Q
+nor a4 (Qbar,Sint,Q);   //2nd NOR gate, input: Sint,Q, output: Qbar
+
+
+endmodule

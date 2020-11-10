@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dC:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/04 - 4x1 Multiplexer/lab4_3/simulation/qsim
 vlab04_3
-Z1 !s110 1601797413
+Z1 !s110 1602188956
 !i10b 1
 !s100 CkJAzjnE9amF4>4H[?JK?2
 IDFgi@<@_9ACzjZ>A`fo@h2
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1601797412
+w1602188955
 8lab04_3.vo
 Flab04_3.vo
 L0 31
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1601797413.000000
+Z4 !s108 1602188956.000000
 !s107 lab04_3.vo|
 !s90 -work|work|lab04_3.vo|
 !i113 1
@@ -32,11 +32,11 @@ Z6 tCvgOpt 0
 vlab04_3_vlg_vec_tst
 R1
 !i10b 1
-!s100 6VB[a6FdZPJNRP`j`Ki421
-I7T7JM@@K><5_h9ig18k0e0
+!s100 T_Bmz=oC9a4dzd@2ZhA9Z1
+IM<>Im_:`dhbC=4V8g9?=g0
 R2
 R0
-w1601797409
+w1602188951
 8Waveform.vwf.vt
 FWaveform.vwf.vt
 L0 29
