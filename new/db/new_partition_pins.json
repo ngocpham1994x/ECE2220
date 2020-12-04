@@ -1,0 +1,245 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "clock_1s",
+					"strict" : false
+				},
+				{
+					"name" : "minute_button_LED",
+					"strict" : false
+				},
+				{
+					"name" : "hour_button_LED",
+					"strict" : false
+				},
+				{
+					"name" : "alarm_LED",
+					"strict" : false
+				},
+				{
+					"name" : "alarm_LED2",
+					"strict" : false
+				},
+				{
+					"name" : "alarm_LED3",
+					"strict" : false
+				},
+				{
+					"name" : "alarm_LED4",
+					"strict" : false
+				},
+				{
+					"name" : "stop_snooze_LED",
+					"strict" : false
+				},
+				{
+					"name" : "reset_alarm_LED",
+					"strict" : false
+				},
+				{
+					"name" : "reset_clock_LED",
+					"strict" : false
+				},
+				{
+					"name" : "second1_SSD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "second1_SSD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "second1_SSD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "second1_SSD[3]",
+					"strict" : false
+				},
+				{
+					"name" : "second1_SSD[4]",
+					"strict" : false
+				},
+				{
+					"name" : "second1_SSD[5]",
+					"strict" : false
+				},
+				{
+					"name" : "second1_SSD[6]",
+					"strict" : false
+				},
+				{
+					"name" : "second0_SSD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "second0_SSD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "second0_SSD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "second0_SSD[3]",
+					"strict" : false
+				},
+				{
+					"name" : "second0_SSD[4]",
+					"strict" : false
+				},
+				{
+					"name" : "second0_SSD[5]",
+					"strict" : false
+				},
+				{
+					"name" : "second0_SSD[6]",
+					"strict" : false
+				},
+				{
+					"name" : "minute1_SSD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "minute1_SSD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "minute1_SSD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "minute1_SSD[3]",
+					"strict" : false
+				},
+				{
+					"name" : "minute1_SSD[4]",
+					"strict" : false
+				},
+				{
+					"name" : "minute1_SSD[5]",
+					"strict" : false
+				},
+				{
+					"name" : "minute1_SSD[6]",
+					"strict" : false
+				},
+				{
+					"name" : "minute0_SSD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "minute0_SSD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "minute0_SSD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "minute0_SSD[3]",
+					"strict" : false
+				},
+				{
+					"name" : "minute0_SSD[4]",
+					"strict" : false
+				},
+				{
+					"name" : "minute0_SSD[5]",
+					"strict" : false
+				},
+				{
+					"name" : "minute0_SSD[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hour1_SSD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hour1_SSD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hour1_SSD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hour1_SSD[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hour1_SSD[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hour1_SSD[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hour1_SSD[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hour0_SSD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hour0_SSD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hour0_SSD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hour0_SSD[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hour0_SSD[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hour0_SSD[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hour0_SSD[6]",
+					"strict" : false
+				},
+				{
+					"name" : "minute_button",
+					"strict" : false
+				},
+				{
+					"name" : "hour_button",
+					"strict" : false
+				},
+				{
+					"name" : "stop_snooze",
+					"strict" : false
+				},
+				{
+					"name" : "reset_alarm",
+					"strict" : false
+				},
+				{
+					"name" : "reset_clock",
+					"strict" : false
+				},
+				{
+					"name" : "internal_clock",
+					"strict" : false
+				},
+				{
+					"name" : "switch_screen_slideswitch",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

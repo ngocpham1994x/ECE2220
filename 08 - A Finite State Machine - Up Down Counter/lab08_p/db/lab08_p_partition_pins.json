@@ -44,10 +44,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "clock_LED",
-					"strict" : false
-				},
-				{
 					"name" : "reset",
 					"strict" : false
 				},

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab08_p
-Sun Nov 08 14:16:44 2020
+Wed Nov 25 16:34:36 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -47,14 +47,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Nov 08 14:16:44 2020       ;
+; Analysis & Synthesis Status     ; Successful - Wed Nov 25 16:34:36 2020       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; lab08_p                                     ;
 ; Top-level Entity Name           ; lab08_p                                     ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 52                                          ;
-; Total pins                      ; 14                                          ;
+; Total pins                      ; 13                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -185,25 +185,25 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimate of Logic utilization (ALMs needed) ; 34          ;
+; Estimate of Logic utilization (ALMs needed) ; 37          ;
 ;                                             ;             ;
-; Combinational ALUT usage for logic          ; 59          ;
+; Combinational ALUT usage for logic          ; 62          ;
 ;     -- 7 input functions                    ; 0           ;
-;     -- 6 input functions                    ; 9           ;
+;     -- 6 input functions                    ; 12          ;
 ;     -- 5 input functions                    ; 2           ;
-;     -- 4 input functions                    ; 17          ;
-;     -- <=3 input functions                  ; 31          ;
+;     -- 4 input functions                    ; 18          ;
+;     -- <=3 input functions                  ; 30          ;
 ;                                             ;             ;
 ; Dedicated logic registers                   ; 52          ;
 ;                                             ;             ;
-; I/O pins                                    ; 14          ;
+; I/O pins                                    ; 13          ;
 ;                                             ;             ;
 ; Total DSP Blocks                            ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
 ; Maximum fan-out                             ; 29          ;
-; Total fan-out                               ; 352         ;
-; Average fan-out                             ; 2.53        ;
+; Total fan-out                               ; 371         ;
+; Average fan-out                             ; 2.65        ;
 +---------------------------------------------+-------------+
 
 
@@ -212,8 +212,8 @@ refer to the applicable agreement for further details.
 +-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node  ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name             ; Entity Name     ; Library Name ;
 +-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------+-----------------+--------------+
-; |lab08_p                    ; 59 (24)             ; 52 (23)                   ; 0                 ; 0          ; 14   ; 0            ; |lab08_p                        ; lab08_p         ; work         ;
-;    |clock_converter:comb_6| ; 35 (35)             ; 29 (29)                   ; 0                 ; 0          ; 0    ; 0            ; |lab08_p|clock_converter:comb_6 ; clock_converter ; work         ;
+; |lab08_p                    ; 62 (24)             ; 52 (23)                   ; 0                 ; 0          ; 13   ; 0            ; |lab08_p                        ; lab08_p         ; work         ;
+;    |clock_converter:comb_5| ; 38 (38)             ; 29 (29)                   ; 0                 ; 0          ; 0    ; 0            ; |lab08_p|clock_converter:comb_5 ; clock_converter ; work         ;
 +-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -333,19 +333,18 @@ Encoding Type:  One-Hot
 ; arriav_ff             ; 52                          ;
 ;     SCLR              ; 29                          ;
 ;     plain             ; 23                          ;
-; arriav_lcell_comb     ; 59                          ;
+; arriav_lcell_comb     ; 62                          ;
 ;     arith             ; 28                          ;
 ;         1 data inputs ; 28                          ;
-;     normal            ; 31                          ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 17                          ;
+;     normal            ; 34                          ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 18                          ;
 ;         5 data inputs ; 2                           ;
-;         6 data inputs ; 9                           ;
-; boundary_port         ; 14                          ;
+;         6 data inputs ; 12                          ;
+; boundary_port         ; 13                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.70                        ;
-; Average LUT depth     ; 3.62                        ;
+; Max LUT depth         ; 5.40                        ;
+; Average LUT depth     ; 3.65                        ;
 +-----------------------+-----------------------------+
 
 
@@ -364,7 +363,7 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Sun Nov 08 14:16:27 2020
+    Info: Processing started: Wed Nov 25 16:34:19 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab08_p -c lab08_p
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -375,20 +374,20 @@ Warning (12125): Using design file lab08_p.v, which is not specified as a design
     Info (12023): Found entity 2: clock_converter File: C:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/08 - A Finite State Machine - Up Down Counter/lab08_p/lab08_p.v Line: 123
 Critical Warning (10846): Verilog HDL Instantiation warning at lab08_p.v(19): instance has no name File: C:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/08 - A Finite State Machine - Up Down Counter/lab08_p/lab08_p.v Line: 19
 Info (12127): Elaborating entity "lab08_p" for the top level hierarchy
-Info (12128): Elaborating entity "clock_converter" for hierarchy "clock_converter:comb_6" File: C:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/08 - A Finite State Machine - Up Down Counter/lab08_p/lab08_p.v Line: 19
+Info (12128): Elaborating entity "clock_converter" for hierarchy "clock_converter:comb_5" File: C:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/08 - A Finite State Machine - Up Down Counter/lab08_p/lab08_p.v Line: 19
 Warning (10230): Verilog HDL assignment warning at lab08_p.v(133): truncated value with size 32 to match size of target (28) File: C:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/08 - A Finite State Machine - Up Down Counter/lab08_p/lab08_p.v Line: 133
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 24 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/08 - A Finite State Machine - Up Down Counter/lab08_p/output_files/lab08_p.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 108 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 116 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 11 output pins
-    Info (21061): Implemented 94 logic cells
+    Info (21059): Implemented 10 output pins
+    Info (21061): Implemented 103 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
     Info: Peak virtual memory: 4815 megabytes
-    Info: Processing ended: Sun Nov 08 14:16:44 2020
+    Info: Processing ended: Wed Nov 25 16:34:36 2020
     Info: Elapsed time: 00:00:17
     Info: Total CPU time (on all processors): 00:00:31
 

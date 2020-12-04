@@ -270,7 +270,7 @@ RESERVED_INPUT               : AF10      :        :                   :         
 RESERVED_INPUT               : AF11      :        :                   :         : 3B        :                
 GND                          : AF12      : gnd    :                   :         :           :                
 RESERVED_INPUT               : AF13      :        :                   :         : 3B        :                
-clock                        : AF14      : input  : 2.5 V             :         : 3B        : Y              
+RESERVED_INPUT               : AF14      :        :                   :         : 3B        :                
 RESERVED_INPUT               : AF15      :        :                   :         : 3B        :                
 RESERVED_INPUT               : AF16      :        :                   :         : 4A        :                
 GND                          : AF17      : gnd    :                   :         :           :                
@@ -281,7 +281,7 @@ RESERVED_INPUT               : AF21      :        :                   :         
 VCCIO4A                      : AF22      : power  :                   : 2.5V    : 4A        :                
 RESERVED_INPUT               : AF23      :        :                   :         : 4A        :                
 RESERVED_INPUT               : AF24      :        :                   :         : 4A        :                
-clock_LED                    : AF25      : output : 2.5 V             :         : 4A        : Y              
+RESERVED_INPUT               : AF25      :        :                   :         : 4A        :                
 RESERVED_INPUT               : AF26      :        :                   :         : 4A        :                
 GND                          : AF27      : gnd    :                   :         :           :                
 RESERVED_INPUT               : AF28      :        :                   :         : 5A        :                
@@ -970,7 +970,7 @@ VCCA_FPLL                    : Y22       : power  :                   : 2.5V    
 RESERVED_INPUT               : Y23       :        :                   :         : 5A        :                
 RESERVED_INPUT               : Y24       :        :                   :         : 5A        :                
 GND                          : Y25       : gnd    :                   :         :           :                
-RESERVED_INPUT               : Y26       :        :                   :         : 5B        :                
+clock                        : Y26       : input  : 2.5 V             :         : 5B        : Y              
 RESERVED_INPUT               : Y27       :        :                   :         : 5B        :                
 RESERVED_INPUT               : Y28       :        :                   :         : 6B        :                
 RESERVED_INPUT               : Y29       :        :                   :         : 6B        :                

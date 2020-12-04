@@ -1,0 +1,33 @@
+|test3
+select => select.IN1
+SSD[0] << SSD_converter2:comb_3.port3
+SSD[1] << SSD_converter2:comb_3.port3
+SSD[2] << SSD_converter2:comb_3.port3
+SSD[3] << SSD_converter2:comb_3.port3
+SSD[4] << SSD_converter2:comb_3.port3
+SSD[5] << SSD_converter2:comb_3.port3
+SSD[6] << SSD_converter2:comb_3.port3
+
+
+|test3|SSD_converter2:comb_3
+select => value_in[3].OUTPUTSELECT
+select => value_in[2].OUTPUTSELECT
+select => value_in[1].OUTPUTSELECT
+select => value_in[0].OUTPUTSELECT
+decimal_input1[0] => value_in[0].DATAB
+decimal_input1[1] => value_in[1].DATAB
+decimal_input1[2] => value_in[2].DATAB
+decimal_input1[3] => value_in[3].DATAB
+decimal_input2[0] => value_in[0].DATAA
+decimal_input2[1] => value_in[1].DATAA
+decimal_input2[2] => value_in[2].DATAA
+decimal_input2[3] => value_in[3].DATAA
+SSD[0] <= SSD[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SSD[1] <= SSD[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SSD[2] <= SSD[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SSD[3] <= SSD[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SSD[4] <= SSD[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SSD[5] <= SSD[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SSD[6] <= SSD[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

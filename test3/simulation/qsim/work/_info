@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/test3/simulation/qsim
+vtest3
+Z1 !s110 1606717563
+!i10b 1
+!s100 :0Pdokz^ajGIRQE50fQ450
+I=40VYELVckmSflIb[89:N2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1606717561
+8test3.vo
+Ftest3.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1606717563.000000
+!s107 test3.vo|
+!s90 -work|work|test3.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vtest3_vlg_vec_tst
+R1
+!i10b 1
+!s100 1OAW1`4=9@]5G30bRBjLe0
+IE8I:[;ib3=9bOJz`bjf3L3
+R2
+R0
+w1606717559
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6

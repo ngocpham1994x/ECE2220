@@ -1,0 +1,87 @@
+|test5
+internal_clock => internal_clock.IN2
+clock_1s << clock_1s.DB_MAX_OUTPUT_PORT_TYPE
+clock_fast << clock_converter_fast:comb_4.port1
+D => test_LED.OUTPUTSELECT
+D => D_LED.DATAIN
+D_LED << D.DB_MAX_OUTPUT_PORT_TYPE
+reset_alarm => reset_alarm.IN1
+reset_alarm_LED << reset_alarm.DB_MAX_OUTPUT_PORT_TYPE
+alarm_LED << flipflop:comb_6.port3
+stop => stop.IN1
+
+
+|test5|clock_converter:comb_3
+internal_clock => clock_1s~reg0.CLK
+internal_clock => count[0].CLK
+internal_clock => count[1].CLK
+internal_clock => count[2].CLK
+internal_clock => count[3].CLK
+internal_clock => count[4].CLK
+internal_clock => count[5].CLK
+internal_clock => count[6].CLK
+internal_clock => count[7].CLK
+internal_clock => count[8].CLK
+internal_clock => count[9].CLK
+internal_clock => count[10].CLK
+internal_clock => count[11].CLK
+internal_clock => count[12].CLK
+internal_clock => count[13].CLK
+internal_clock => count[14].CLK
+internal_clock => count[15].CLK
+internal_clock => count[16].CLK
+internal_clock => count[17].CLK
+internal_clock => count[18].CLK
+internal_clock => count[19].CLK
+internal_clock => count[20].CLK
+internal_clock => count[21].CLK
+internal_clock => count[22].CLK
+internal_clock => count[23].CLK
+internal_clock => count[24].CLK
+internal_clock => count[25].CLK
+internal_clock => count[26].CLK
+internal_clock => count[27].CLK
+clock_1s <= clock_1s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test5|clock_converter_fast:comb_4
+internal_clock => clock_1s~reg0.CLK
+internal_clock => count[0].CLK
+internal_clock => count[1].CLK
+internal_clock => count[2].CLK
+internal_clock => count[3].CLK
+internal_clock => count[4].CLK
+internal_clock => count[5].CLK
+internal_clock => count[6].CLK
+internal_clock => count[7].CLK
+internal_clock => count[8].CLK
+internal_clock => count[9].CLK
+internal_clock => count[10].CLK
+internal_clock => count[11].CLK
+internal_clock => count[12].CLK
+internal_clock => count[13].CLK
+internal_clock => count[14].CLK
+internal_clock => count[15].CLK
+internal_clock => count[16].CLK
+internal_clock => count[17].CLK
+internal_clock => count[18].CLK
+internal_clock => count[19].CLK
+internal_clock => count[20].CLK
+internal_clock => count[21].CLK
+internal_clock => count[22].CLK
+internal_clock => count[23].CLK
+internal_clock => count[24].CLK
+internal_clock => count[25].CLK
+internal_clock => count[26].CLK
+internal_clock => count[27].CLK
+clock_1s <= clock_1s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test5|flipflop:comb_6
+D => Q.DATAA
+clock => ~NO_FANOUT~
+Resetn => Q.OUTPUTSELECT
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+stop => Q.OUTPUTSELECT
+
+

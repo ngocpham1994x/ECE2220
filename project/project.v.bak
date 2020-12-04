@@ -1,0 +1,24 @@
+module project();
+
+input;
+output;
+
+endmodule
+
+
+module SSD();
+
+
+
+
+endmodule
+
+
+
+module clock();
+
+
+
+
+endmodule
+

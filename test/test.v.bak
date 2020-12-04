@@ -1,0 +1,26 @@
+
+
+module test(
+input [11:0] binary_in,   //12-bit binary comes in, 12-bit for extra digits to account for thoudsandth position. Example: binary 1111 1111 1111 = decimal 4093
+output reg [3:0] thousandth,
+output reg [3:0] hundredth,
+output reg [3:0] tenth,
+output reg [3:0] oneth
+);
+
+reg [11:0] binary_local = 0;
+
+always @ (binary_in)
+	begin
+	
+	binary_local = binary_in;
+	thousandth = binary_local/1000;
+	binary_local = binary_local%1000;
+	hundredth =	binary_local/100;
+	binary_local = binary_local%100;
+	tenth = binary_local/10;
+	oneth = binary_local%10;
+	
+	end
+
+endmodule

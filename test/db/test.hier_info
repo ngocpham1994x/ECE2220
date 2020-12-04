@@ -1,0 +1,92 @@
+|test
+binary[0] => binary[0].IN1
+binary[1] => binary[1].IN1
+binary[2] => binary[2].IN1
+binary[3] => binary[3].IN1
+left[0] <= SSD_converter:comb_4.port1
+left[1] <= SSD_converter:comb_4.port1
+left[2] <= SSD_converter:comb_4.port1
+left[3] <= SSD_converter:comb_4.port1
+left[4] <= SSD_converter:comb_4.port1
+left[5] <= SSD_converter:comb_4.port1
+left[6] <= SSD_converter:comb_4.port1
+right[0] <= SSD_converter:comb_5.port1
+right[1] <= SSD_converter:comb_5.port1
+right[2] <= SSD_converter:comb_5.port1
+right[3] <= SSD_converter:comb_5.port1
+right[4] <= SSD_converter:comb_5.port1
+right[5] <= SSD_converter:comb_5.port1
+right[6] <= SSD_converter:comb_5.port1
+
+
+|test|BCD:comb_3
+binary_in[0] => Div0.IN21
+binary_in[0] => Mod0.IN21
+binary_in[1] => Div0.IN20
+binary_in[1] => Mod0.IN20
+binary_in[2] => Div0.IN19
+binary_in[2] => Mod0.IN19
+binary_in[3] => Div0.IN18
+binary_in[3] => Mod0.IN18
+binary_in[4] => Div0.IN17
+binary_in[4] => Mod0.IN17
+binary_in[5] => Div0.IN16
+binary_in[5] => Mod0.IN16
+binary_in[6] => Div0.IN15
+binary_in[6] => Mod0.IN15
+binary_in[7] => Div0.IN14
+binary_in[7] => Mod0.IN14
+binary_in[8] => Div0.IN13
+binary_in[8] => Mod0.IN13
+binary_in[9] => Div0.IN12
+binary_in[9] => Mod0.IN12
+binary_in[10] => Div0.IN11
+binary_in[10] => Mod0.IN11
+binary_in[11] => Div0.IN10
+binary_in[11] => Mod0.IN10
+thousandth[0] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+thousandth[1] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+thousandth[2] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+thousandth[3] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+hundredth[0] <= Div1.DB_MAX_OUTPUT_PORT_TYPE
+hundredth[1] <= Div1.DB_MAX_OUTPUT_PORT_TYPE
+hundredth[2] <= Div1.DB_MAX_OUTPUT_PORT_TYPE
+hundredth[3] <= Div1.DB_MAX_OUTPUT_PORT_TYPE
+tenth[0] <= Div2.DB_MAX_OUTPUT_PORT_TYPE
+tenth[1] <= Div2.DB_MAX_OUTPUT_PORT_TYPE
+tenth[2] <= Div2.DB_MAX_OUTPUT_PORT_TYPE
+tenth[3] <= Div2.DB_MAX_OUTPUT_PORT_TYPE
+oneth[0] <= Mod2.DB_MAX_OUTPUT_PORT_TYPE
+oneth[1] <= Mod2.DB_MAX_OUTPUT_PORT_TYPE
+oneth[2] <= Mod2.DB_MAX_OUTPUT_PORT_TYPE
+oneth[3] <= Mod2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|SSD_converter:comb_4
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+SSD[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+SSD[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+SSD[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+SSD[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+SSD[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+SSD[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+SSD[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|SSD_converter:comb_5
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+SSD[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+SSD[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+SSD[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+SSD[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+SSD[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+SSD[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+SSD[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

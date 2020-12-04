@@ -73,7 +73,7 @@ set_location_assignment PIN_AF25 -to clock_LED
 set_location_assignment PIN_AA30 -to reset
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_location_assignment PIN_AD24 -to clock_1Hz
-set_location_assignment PIN_AF14 -to clock
+set_location_assignment PIN_Y26 -to clock
 set_global_assignment -name VERILOG_FILE ../lab08_option1_usinglatches.v
 set_global_assignment -name VERILOG_FILE ../lab08_option2_usingcases.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

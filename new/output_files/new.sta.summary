@@ -1,0 +1,245 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'clock_counter:comb_10|sec[0]'
+Slack : -36.368
+TNS   : -349.242
+
+Type  : Slow 1100mV 85C Model Setup 'switch_screen_slideswitch'
+Slack : -24.096
+TNS   : -622.511
+
+Type  : Slow 1100mV 85C Model Setup 'internal_clock'
+Slack : -4.858
+TNS   : -193.745
+
+Type  : Slow 1100mV 85C Model Setup 'clock_converter:comb_8|clock_1s'
+Slack : -4.093
+TNS   : -62.702
+
+Type  : Slow 1100mV 85C Model Setup 'clock_converter_fast:comb_9|clock_fast'
+Slack : -3.780
+TNS   : -40.984
+
+Type  : Slow 1100mV 85C Model Hold 'clock_counter:comb_10|sec[0]'
+Slack : -15.235
+TNS   : -182.763
+
+Type  : Slow 1100mV 85C Model Hold 'switch_screen_slideswitch'
+Slack : -2.283
+TNS   : -23.956
+
+Type  : Slow 1100mV 85C Model Hold 'internal_clock'
+Slack : -1.679
+TNS   : -2.134
+
+Type  : Slow 1100mV 85C Model Hold 'clock_converter:comb_8|clock_1s'
+Slack : 0.124
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clock_converter_fast:comb_9|clock_fast'
+Slack : 0.859
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock_counter:comb_10|sec[0]'
+Slack : -13.858
+TNS   : -12358.884
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'switch_screen_slideswitch'
+Slack : -1.114
+TNS   : -78.951
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'internal_clock'
+Slack : -0.394
+TNS   : -39.368
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock_converter:comb_8|clock_1s'
+Slack : -0.394
+TNS   : -11.699
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock_converter_fast:comb_9|clock_fast'
+Slack : -0.394
+TNS   : -7.313
+
+Type  : Slow 1100mV 0C Model Setup 'clock_counter:comb_10|sec[0]'
+Slack : -35.399
+TNS   : -346.932
+
+Type  : Slow 1100mV 0C Model Setup 'switch_screen_slideswitch'
+Slack : -24.625
+TNS   : -641.776
+
+Type  : Slow 1100mV 0C Model Setup 'internal_clock'
+Slack : -4.978
+TNS   : -187.453
+
+Type  : Slow 1100mV 0C Model Setup 'clock_converter:comb_8|clock_1s'
+Slack : -3.916
+TNS   : -60.372
+
+Type  : Slow 1100mV 0C Model Setup 'clock_converter_fast:comb_9|clock_fast'
+Slack : -3.658
+TNS   : -39.716
+
+Type  : Slow 1100mV 0C Model Hold 'clock_counter:comb_10|sec[0]'
+Slack : -15.827
+TNS   : -190.368
+
+Type  : Slow 1100mV 0C Model Hold 'switch_screen_slideswitch'
+Slack : -2.325
+TNS   : -25.537
+
+Type  : Slow 1100mV 0C Model Hold 'internal_clock'
+Slack : -1.637
+TNS   : -2.177
+
+Type  : Slow 1100mV 0C Model Hold 'clock_converter:comb_8|clock_1s'
+Slack : 0.158
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clock_converter_fast:comb_9|clock_fast'
+Slack : 0.858
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock_counter:comb_10|sec[0]'
+Slack : -14.485
+TNS   : -12882.250
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'switch_screen_slideswitch'
+Slack : -1.144
+TNS   : -81.235
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'internal_clock'
+Slack : -0.431
+TNS   : -43.351
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock_converter:comb_8|clock_1s'
+Slack : -0.394
+TNS   : -11.316
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock_converter_fast:comb_9|clock_fast'
+Slack : -0.394
+TNS   : -7.140
+
+Type  : Fast 1100mV 85C Model Setup 'clock_counter:comb_10|sec[0]'
+Slack : -24.720
+TNS   : -219.885
+
+Type  : Fast 1100mV 85C Model Setup 'switch_screen_slideswitch'
+Slack : -12.675
+TNS   : -322.503
+
+Type  : Fast 1100mV 85C Model Setup 'internal_clock'
+Slack : -2.864
+TNS   : -87.352
+
+Type  : Fast 1100mV 85C Model Setup 'clock_converter_fast:comb_9|clock_fast'
+Slack : -2.477
+TNS   : -26.762
+
+Type  : Fast 1100mV 85C Model Setup 'clock_converter:comb_8|clock_1s'
+Slack : -2.307
+TNS   : -35.279
+
+Type  : Fast 1100mV 85C Model Hold 'clock_counter:comb_10|sec[0]'
+Slack : -8.010
+TNS   : -95.680
+
+Type  : Fast 1100mV 85C Model Hold 'switch_screen_slideswitch'
+Slack : -1.470
+TNS   : -15.289
+
+Type  : Fast 1100mV 85C Model Hold 'internal_clock'
+Slack : -0.889
+TNS   : -0.971
+
+Type  : Fast 1100mV 85C Model Hold 'clock_converter:comb_8|clock_1s'
+Slack : -0.197
+TNS   : -0.197
+
+Type  : Fast 1100mV 85C Model Hold 'clock_converter_fast:comb_9|clock_fast'
+Slack : 0.419
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock_counter:comb_10|sec[0]'
+Slack : -7.107
+TNS   : -5832.964
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'switch_screen_slideswitch'
+Slack : -0.819
+TNS   : -55.505
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'internal_clock'
+Slack : -0.452
+TNS   : -7.150
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock_converter:comb_8|clock_1s'
+Slack : -0.074
+TNS   : -0.704
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock_converter_fast:comb_9|clock_fast'
+Slack : -0.038
+TNS   : -0.067
+
+Type  : Fast 1100mV 0C Model Setup 'clock_counter:comb_10|sec[0]'
+Slack : -21.654
+TNS   : -196.847
+
+Type  : Fast 1100mV 0C Model Setup 'switch_screen_slideswitch'
+Slack : -11.726
+TNS   : -299.246
+
+Type  : Fast 1100mV 0C Model Setup 'internal_clock'
+Slack : -2.601
+TNS   : -74.059
+
+Type  : Fast 1100mV 0C Model Setup 'clock_converter_fast:comb_9|clock_fast'
+Slack : -2.338
+TNS   : -25.481
+
+Type  : Fast 1100mV 0C Model Setup 'clock_converter:comb_8|clock_1s'
+Slack : -2.196
+TNS   : -32.972
+
+Type  : Fast 1100mV 0C Model Hold 'clock_counter:comb_10|sec[0]'
+Slack : -7.508
+TNS   : -90.179
+
+Type  : Fast 1100mV 0C Model Hold 'switch_screen_slideswitch'
+Slack : -1.419
+TNS   : -15.945
+
+Type  : Fast 1100mV 0C Model Hold 'internal_clock'
+Slack : -0.928
+TNS   : -1.165
+
+Type  : Fast 1100mV 0C Model Hold 'clock_converter:comb_8|clock_1s'
+Slack : -0.162
+TNS   : -0.162
+
+Type  : Fast 1100mV 0C Model Hold 'clock_converter_fast:comb_9|clock_fast'
+Slack : 0.389
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock_counter:comb_10|sec[0]'
+Slack : -6.589
+TNS   : -5515.453
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'switch_screen_slideswitch'
+Slack : -0.735
+TNS   : -51.854
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'internal_clock'
+Slack : -0.476
+TNS   : -7.251
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock_converter:comb_8|clock_1s'
+Slack : -0.015
+TNS   : -0.102
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock_converter_fast:comb_9|clock_fast'
+Slack : 0.008
+TNS   : 0.000
+
+------------------------------------------------------------

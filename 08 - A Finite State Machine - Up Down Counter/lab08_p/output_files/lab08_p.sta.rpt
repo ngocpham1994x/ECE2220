@@ -1,5 +1,5 @@
 Timing Analyzer report for lab08_p
-Sun Nov 08 14:17:59 2020
+Wed Nov 25 16:35:46 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -105,8 +105,8 @@ refer to the applicable agreement for further details.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   3.2%      ;
-;     Processor 3            ;   3.1%      ;
-;     Processor 4            ;   3.0%      ;
+;     Processor 3            ;   3.0%      ;
+;     Processor 4            ;   2.9%      ;
 +----------------------------+-------------+
 
 
@@ -116,7 +116,7 @@ refer to the applicable agreement for further details.
 ; Clock Name                       ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                              ;
 +----------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------------------------------+
 ; clock                            ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clock }                            ;
-; clock_converter:comb_6|clock_1Hz ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clock_converter:comb_6|clock_1Hz } ;
+; clock_converter:comb_5|clock_1Hz ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clock_converter:comb_5|clock_1Hz } ;
 +----------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------------------------------+
 
 
@@ -125,8 +125,8 @@ refer to the applicable agreement for further details.
 +------------+-----------------+----------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                       ; Note ;
 +------------+-----------------+----------------------------------+------+
-; 135.08 MHz ; 135.08 MHz      ; clock                            ;      ;
-; 307.22 MHz ; 307.22 MHz      ; clock_converter:comb_6|clock_1Hz ;      ;
+; 138.45 MHz ; 138.45 MHz      ; clock                            ;      ;
+; 324.89 MHz ; 324.89 MHz      ; clock_converter:comb_5|clock_1Hz ;      ;
 +------------+-----------------+----------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -142,8 +142,8 @@ HTML report is unavailable in plain text report export.
 +----------------------------------+--------+---------------+
 ; Clock                            ; Slack  ; End Point TNS ;
 +----------------------------------+--------+---------------+
-; clock                            ; -6.403 ; -138.907      ;
-; clock_converter:comb_6|clock_1Hz ; -2.255 ; -39.853       ;
+; clock                            ; -6.223 ; -123.724      ;
+; clock_converter:comb_5|clock_1Hz ; -2.078 ; -38.224       ;
 +----------------------------------+--------+---------------+
 
 
@@ -152,8 +152,8 @@ HTML report is unavailable in plain text report export.
 +----------------------------------+-------+---------------+
 ; Clock                            ; Slack ; End Point TNS ;
 +----------------------------------+-------+---------------+
-; clock                            ; 0.475 ; 0.000         ;
-; clock_converter:comb_6|clock_1Hz ; 0.595 ; 0.000         ;
+; clock                            ; 0.470 ; 0.000         ;
+; clock_converter:comb_5|clock_1Hz ; 0.917 ; 0.000         ;
 +----------------------------------+-------+---------------+
 
 
@@ -174,8 +174,8 @@ No paths to report.
 +----------------------------------+--------+---------------+
 ; Clock                            ; Slack  ; End Point TNS ;
 +----------------------------------+--------+---------------+
-; clock                            ; -0.394 ; -15.304       ;
-; clock_converter:comb_6|clock_1Hz ; -0.394 ; -14.330       ;
+; clock                            ; -0.394 ; -15.416       ;
+; clock_converter:comb_5|clock_1Hz ; -0.394 ; -12.408       ;
 +----------------------------------+--------+---------------+
 
 
@@ -190,8 +190,8 @@ No synchronizer chains to report.
 +------------+-----------------+----------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                       ; Note ;
 +------------+-----------------+----------------------------------+------+
-; 130.72 MHz ; 130.72 MHz      ; clock                            ;      ;
-; 307.22 MHz ; 307.22 MHz      ; clock_converter:comb_6|clock_1Hz ;      ;
+; 133.35 MHz ; 133.35 MHz      ; clock                            ;      ;
+; 330.47 MHz ; 330.47 MHz      ; clock_converter:comb_5|clock_1Hz ;      ;
 +------------+-----------------+----------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -201,8 +201,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------------------------------+--------+---------------+
 ; Clock                            ; Slack  ; End Point TNS ;
 +----------------------------------+--------+---------------+
-; clock                            ; -6.650 ; -141.227      ;
-; clock_converter:comb_6|clock_1Hz ; -2.255 ; -39.381       ;
+; clock                            ; -6.499 ; -124.944      ;
+; clock_converter:comb_5|clock_1Hz ; -2.026 ; -37.771       ;
 +----------------------------------+--------+---------------+
 
 
@@ -211,8 +211,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------------------------------+-------+---------------+
 ; Clock                            ; Slack ; End Point TNS ;
 +----------------------------------+-------+---------------+
-; clock                            ; 0.457 ; 0.000         ;
-; clock_converter:comb_6|clock_1Hz ; 0.559 ; 0.000         ;
+; clock                            ; 0.455 ; 0.000         ;
+; clock_converter:comb_5|clock_1Hz ; 0.881 ; 0.000         ;
 +----------------------------------+-------+---------------+
 
 
@@ -233,8 +233,8 @@ No paths to report.
 +----------------------------------+--------+---------------+
 ; Clock                            ; Slack  ; End Point TNS ;
 +----------------------------------+--------+---------------+
-; clock                            ; -0.415 ; -16.457       ;
-; clock_converter:comb_6|clock_1Hz ; -0.394 ; -14.065       ;
+; clock                            ; -0.407 ; -17.002       ;
+; clock_converter:comb_5|clock_1Hz ; -0.394 ; -12.279       ;
 +----------------------------------+--------+---------------+
 
 
@@ -249,8 +249,8 @@ No synchronizer chains to report.
 +----------------------------------+--------+---------------+
 ; Clock                            ; Slack  ; End Point TNS ;
 +----------------------------------+--------+---------------+
-; clock                            ; -3.460 ; -64.549       ;
-; clock_converter:comb_6|clock_1Hz ; -1.100 ; -18.586       ;
+; clock                            ; -3.708 ; -57.674       ;
+; clock_converter:comb_5|clock_1Hz ; -1.058 ; -17.237       ;
 +----------------------------------+--------+---------------+
 
 
@@ -259,8 +259,8 @@ No synchronizer chains to report.
 +----------------------------------+-------+---------------+
 ; Clock                            ; Slack ; End Point TNS ;
 +----------------------------------+-------+---------------+
-; clock                            ; 0.261 ; 0.000         ;
-; clock_converter:comb_6|clock_1Hz ; 0.281 ; 0.000         ;
+; clock                            ; 0.260 ; 0.000         ;
+; clock_converter:comb_5|clock_1Hz ; 0.462 ; 0.000         ;
 +----------------------------------+-------+---------------+
 
 
@@ -281,8 +281,8 @@ No paths to report.
 +----------------------------------+--------+---------------+
 ; Clock                            ; Slack  ; End Point TNS ;
 +----------------------------------+--------+---------------+
-; clock                            ; -0.430 ; -2.982        ;
-; clock_converter:comb_6|clock_1Hz ; -0.017 ; -0.296        ;
+; clock                            ; -0.441 ; -2.725        ;
+; clock_converter:comb_5|clock_1Hz ; 0.076  ; 0.000         ;
 +----------------------------------+--------+---------------+
 
 
@@ -297,8 +297,8 @@ No synchronizer chains to report.
 +----------------------------------+--------+---------------+
 ; Clock                            ; Slack  ; End Point TNS ;
 +----------------------------------+--------+---------------+
-; clock                            ; -3.225 ; -59.333       ;
-; clock_converter:comb_6|clock_1Hz ; -0.942 ; -15.845       ;
+; clock                            ; -3.152 ; -51.783       ;
+; clock_converter:comb_5|clock_1Hz ; -0.896 ; -14.649       ;
 +----------------------------------+--------+---------------+
 
 
@@ -307,8 +307,8 @@ No synchronizer chains to report.
 +----------------------------------+-------+---------------+
 ; Clock                            ; Slack ; End Point TNS ;
 +----------------------------------+-------+---------------+
-; clock                            ; 0.241 ; 0.000         ;
-; clock_converter:comb_6|clock_1Hz ; 0.246 ; 0.000         ;
+; clock                            ; 0.240 ; 0.000         ;
+; clock_converter:comb_5|clock_1Hz ; 0.403 ; 0.000         ;
 +----------------------------------+-------+---------------+
 
 
@@ -329,8 +329,8 @@ No paths to report.
 +----------------------------------+--------+---------------+
 ; Clock                            ; Slack  ; End Point TNS ;
 +----------------------------------+--------+---------------+
-; clock                            ; -0.437 ; -2.961        ;
-; clock_converter:comb_6|clock_1Hz ; 0.017  ; 0.000         ;
+; clock                            ; -0.447 ; -2.729        ;
+; clock_converter:comb_5|clock_1Hz ; 0.090  ; 0.000         ;
 +----------------------------------+--------+---------------+
 
 
@@ -345,12 +345,12 @@ No synchronizer chains to report.
 +-----------------------------------+----------+-------+----------+---------+---------------------+
 ; Clock                             ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +-----------------------------------+----------+-------+----------+---------+---------------------+
-; Worst-case Slack                  ; -6.650   ; 0.241 ; N/A      ; N/A     ; -0.437              ;
-;  clock                            ; -6.650   ; 0.241 ; N/A      ; N/A     ; -0.437              ;
-;  clock_converter:comb_6|clock_1Hz ; -2.255   ; 0.246 ; N/A      ; N/A     ; -0.394              ;
-; Design-wide TNS                   ; -180.608 ; 0.0   ; 0.0      ; 0.0     ; -30.522             ;
-;  clock                            ; -141.227 ; 0.000 ; N/A      ; N/A     ; -16.457             ;
-;  clock_converter:comb_6|clock_1Hz ; -39.853  ; 0.000 ; N/A      ; N/A     ; -14.330             ;
+; Worst-case Slack                  ; -6.499   ; 0.240 ; N/A      ; N/A     ; -0.447              ;
+;  clock                            ; -6.499   ; 0.240 ; N/A      ; N/A     ; -0.447              ;
+;  clock_converter:comb_5|clock_1Hz ; -2.078   ; 0.403 ; N/A      ; N/A     ; -0.394              ;
+; Design-wide TNS                   ; -162.715 ; 0.0   ; 0.0      ; 0.0     ; -29.281             ;
+;  clock                            ; -124.944 ; 0.000 ; N/A      ; N/A     ; -17.002             ;
+;  clock_converter:comb_5|clock_1Hz ; -38.224  ; 0.000 ; N/A      ; N/A     ; -12.408             ;
 +-----------------------------------+----------+-------+----------+---------+---------------------+
 
 
@@ -369,7 +369,6 @@ No synchronizer chains to report.
 ; SSD[6]    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; reset_LED ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; w_LED     ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; clock_LED ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 +-----------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
 
 
@@ -399,7 +398,6 @@ No synchronizer chains to report.
 ; SSD[6]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0557 V           ; 0.175 V                              ; 0.114 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0557 V          ; 0.175 V                             ; 0.114 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
 ; reset_LED ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
 ; w_LED     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
-; clock_LED ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0568 V           ; 0.173 V                              ; 0.113 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0568 V          ; 0.173 V                             ; 0.113 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
 +-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
@@ -418,7 +416,6 @@ No synchronizer chains to report.
 ; SSD[6]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.037 V            ; 0.188 V                              ; 0.158 V                              ; 4.67e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.037 V           ; 0.188 V                             ; 0.158 V                             ; 4.67e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
 ; reset_LED ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
 ; w_LED     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
-; clock_LED ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.0374 V           ; 0.189 V                              ; 0.158 V                              ; 4.66e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.0374 V          ; 0.189 V                             ; 0.158 V                             ; 4.66e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
 +-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
@@ -437,7 +434,6 @@ No synchronizer chains to report.
 ; SSD[6]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
 ; reset_LED ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
 ; w_LED     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
-; clock_LED ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
 +-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
@@ -456,7 +452,6 @@ No synchronizer chains to report.
 ; SSD[6]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
 ; reset_LED ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
 ; w_LED     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
-; clock_LED ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
 +-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
@@ -465,9 +460,9 @@ No synchronizer chains to report.
 +----------------------------------+----------------------------------+----------+----------+----------+----------+
 ; From Clock                       ; To Clock                         ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +----------------------------------+----------------------------------+----------+----------+----------+----------+
-; clock                            ; clock                            ; 11368    ; 0        ; 0        ; 0        ;
-; clock_converter:comb_6|clock_1Hz ; clock                            ; 1        ; 1        ; 0        ; 0        ;
-; clock_converter:comb_6|clock_1Hz ; clock_converter:comb_6|clock_1Hz ; 102      ; 0        ; 0        ; 0        ;
+; clock                            ; clock                            ; 12151    ; 0        ; 0        ; 0        ;
+; clock_converter:comb_5|clock_1Hz ; clock                            ; 1        ; 1        ; 0        ; 0        ;
+; clock_converter:comb_5|clock_1Hz ; clock_converter:comb_5|clock_1Hz ; 102      ; 0        ; 0        ; 0        ;
 +----------------------------------+----------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -477,9 +472,9 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +----------------------------------+----------------------------------+----------+----------+----------+----------+
 ; From Clock                       ; To Clock                         ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +----------------------------------+----------------------------------+----------+----------+----------+----------+
-; clock                            ; clock                            ; 11368    ; 0        ; 0        ; 0        ;
-; clock_converter:comb_6|clock_1Hz ; clock                            ; 1        ; 1        ; 0        ; 0        ;
-; clock_converter:comb_6|clock_1Hz ; clock_converter:comb_6|clock_1Hz ; 102      ; 0        ; 0        ; 0        ;
+; clock                            ; clock                            ; 12151    ; 0        ; 0        ; 0        ;
+; clock_converter:comb_5|clock_1Hz ; clock                            ; 1        ; 1        ; 0        ; 0        ;
+; clock_converter:comb_5|clock_1Hz ; clock_converter:comb_5|clock_1Hz ; 102      ; 0        ; 0        ; 0        ;
 +----------------------------------+----------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -505,8 +500,8 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 2     ; 2    ;
 ; Unconstrained Input Port Paths  ; 48    ; 48   ;
-; Unconstrained Output Ports      ; 11    ; 11   ;
-; Unconstrained Output Port Paths ; 11    ; 11   ;
+; Unconstrained Output Ports      ; 10    ; 10   ;
+; Unconstrained Output Port Paths ; 10    ; 10   ;
 +---------------------------------+-------+------+
 
 
@@ -516,7 +511,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Target                           ; Clock                            ; Type ; Status      ;
 +----------------------------------+----------------------------------+------+-------------+
 ; clock                            ; clock                            ; Base ; Constrained ;
-; clock_converter:comb_6|clock_1Hz ; clock_converter:comb_6|clock_1Hz ; Base ; Constrained ;
+; clock_converter:comb_5|clock_1Hz ; clock_converter:comb_5|clock_1Hz ; Base ; Constrained ;
 +----------------------------------+----------------------------------+------+-------------+
 
 
@@ -543,7 +538,6 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; SSD[5]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; SSD[6]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; clock_1Hz   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; clock_LED   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; reset_LED   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; w_LED       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +-------------+---------------------------------------------------------------------------------------+
@@ -572,7 +566,6 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; SSD[5]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; SSD[6]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; clock_1Hz   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; clock_LED   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; reset_LED   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; w_LED       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +-------------+---------------------------------------------------------------------------------------+
@@ -584,7 +577,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Sun Nov 08 14:17:52 2020
+    Info: Processing started: Wed Nov 25 16:35:39 2020
 Info: Command: quartus_sta lab08_p -c lab08_p
 Info: qsta_default_script.tcl version: #2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -595,103 +588,103 @@ Critical Warning (332012): Synopsys Design Constraints File file not found: 'lab
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name clock clock
-    Info (332105): create_clock -period 1.000 -name clock_converter:comb_6|clock_1Hz clock_converter:comb_6|clock_1Hz
+    Info (332105): create_clock -period 1.000 -name clock_converter:comb_5|clock_1Hz clock_converter:comb_5|clock_1Hz
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -6.403
+Info (332146): Worst-case setup slack is -6.223
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -6.403            -138.907 clock 
-    Info (332119):    -2.255             -39.853 clock_converter:comb_6|clock_1Hz 
-Info (332146): Worst-case hold slack is 0.475
+    Info (332119):    -6.223            -123.724 clock 
+    Info (332119):    -2.078             -38.224 clock_converter:comb_5|clock_1Hz 
+Info (332146): Worst-case hold slack is 0.470
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.475               0.000 clock 
-    Info (332119):     0.595               0.000 clock_converter:comb_6|clock_1Hz 
+    Info (332119):     0.470               0.000 clock 
+    Info (332119):     0.917               0.000 clock_converter:comb_5|clock_1Hz 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -0.394
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.394             -15.304 clock 
-    Info (332119):    -0.394             -14.330 clock_converter:comb_6|clock_1Hz 
+    Info (332119):    -0.394             -15.416 clock 
+    Info (332119):    -0.394             -12.408 clock_converter:comb_5|clock_1Hz 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -6.650
+Info (332146): Worst-case setup slack is -6.499
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -6.650            -141.227 clock 
-    Info (332119):    -2.255             -39.381 clock_converter:comb_6|clock_1Hz 
-Info (332146): Worst-case hold slack is 0.457
+    Info (332119):    -6.499            -124.944 clock 
+    Info (332119):    -2.026             -37.771 clock_converter:comb_5|clock_1Hz 
+Info (332146): Worst-case hold slack is 0.455
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.457               0.000 clock 
-    Info (332119):     0.559               0.000 clock_converter:comb_6|clock_1Hz 
+    Info (332119):     0.455               0.000 clock 
+    Info (332119):     0.881               0.000 clock_converter:comb_5|clock_1Hz 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.415
+Info (332146): Worst-case minimum pulse width slack is -0.407
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.415             -16.457 clock 
-    Info (332119):    -0.394             -14.065 clock_converter:comb_6|clock_1Hz 
+    Info (332119):    -0.407             -17.002 clock 
+    Info (332119):    -0.394             -12.279 clock_converter:comb_5|clock_1Hz 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -3.460
+Info (332146): Worst-case setup slack is -3.708
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.460             -64.549 clock 
-    Info (332119):    -1.100             -18.586 clock_converter:comb_6|clock_1Hz 
-Info (332146): Worst-case hold slack is 0.261
+    Info (332119):    -3.708             -57.674 clock 
+    Info (332119):    -1.058             -17.237 clock_converter:comb_5|clock_1Hz 
+Info (332146): Worst-case hold slack is 0.260
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.261               0.000 clock 
-    Info (332119):     0.281               0.000 clock_converter:comb_6|clock_1Hz 
+    Info (332119):     0.260               0.000 clock 
+    Info (332119):     0.462               0.000 clock_converter:comb_5|clock_1Hz 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.430
+Info (332146): Worst-case minimum pulse width slack is -0.441
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.430              -2.982 clock 
-    Info (332119):    -0.017              -0.296 clock_converter:comb_6|clock_1Hz 
+    Info (332119):    -0.441              -2.725 clock 
+    Info (332119):     0.076               0.000 clock_converter:comb_5|clock_1Hz 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -3.225
+Info (332146): Worst-case setup slack is -3.152
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.225             -59.333 clock 
-    Info (332119):    -0.942             -15.845 clock_converter:comb_6|clock_1Hz 
-Info (332146): Worst-case hold slack is 0.241
+    Info (332119):    -3.152             -51.783 clock 
+    Info (332119):    -0.896             -14.649 clock_converter:comb_5|clock_1Hz 
+Info (332146): Worst-case hold slack is 0.240
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.241               0.000 clock 
-    Info (332119):     0.246               0.000 clock_converter:comb_6|clock_1Hz 
+    Info (332119):     0.240               0.000 clock 
+    Info (332119):     0.403               0.000 clock_converter:comb_5|clock_1Hz 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.437
+Info (332146): Worst-case minimum pulse width slack is -0.447
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.437              -2.961 clock 
-    Info (332119):     0.017               0.000 clock_converter:comb_6|clock_1Hz 
+    Info (332119):    -0.447              -2.729 clock 
+    Info (332119):     0.090               0.000 clock_converter:comb_5|clock_1Hz 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5091 megabytes
-    Info: Processing ended: Sun Nov 08 14:17:59 2020
+    Info: Peak virtual memory: 5089 megabytes
+    Info: Processing ended: Wed Nov 25 16:35:46 2020
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:08
+    Info: Total CPU time (on all processors): 00:00:07
 
 

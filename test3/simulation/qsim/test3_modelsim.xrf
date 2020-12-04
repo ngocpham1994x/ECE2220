@@ -1,0 +1,6 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/test3/test3.v
+source_file = 1, C:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/test3/db/test3.cbx.xml
+design_name = test3
+instance = comp, \push_button_LED~output , push_button_LED~output, test3, 1
+instance = comp, \push_button~input , push_button~input, test3, 1

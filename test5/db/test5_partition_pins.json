@@ -1,0 +1,45 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "clock_1s",
+					"strict" : false
+				},
+				{
+					"name" : "clock_fast",
+					"strict" : false
+				},
+				{
+					"name" : "D_LED",
+					"strict" : false
+				},
+				{
+					"name" : "reset_alarm_LED",
+					"strict" : false
+				},
+				{
+					"name" : "alarm_LED",
+					"strict" : false
+				},
+				{
+					"name" : "D",
+					"strict" : false
+				},
+				{
+					"name" : "reset_alarm",
+					"strict" : false
+				},
+				{
+					"name" : "stop",
+					"strict" : false
+				},
+				{
+					"name" : "internal_clock",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

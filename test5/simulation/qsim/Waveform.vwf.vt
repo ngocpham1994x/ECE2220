@@ -1,0 +1,91 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "12/04/2020 01:04:07"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          test5
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module test5_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg D;
+reg internal_clock;
+reg reset_alarm;
+reg stop;
+// wires                                               
+wire D_LED;
+wire alarm_LED;
+wire clock_1s;
+wire reset_alarm_LED;
+
+// assign statements (if any)                          
+test5 i1 (
+// port map - connection between master ports and signals/registers   
+	.D(D),
+	.D_LED(D_LED),
+	.alarm_LED(alarm_LED),
+	.clock_1s(clock_1s),
+	.internal_clock(internal_clock),
+	.reset_alarm(reset_alarm),
+	.reset_alarm_LED(reset_alarm_LED),
+	.stop(stop)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// internal_clock
+always
+begin
+	internal_clock = 1'b0;
+	internal_clock = #10000 1'b1;
+	#10000;
+end 
+
+// reset_alarm
+initial
+begin
+	reset_alarm = 1'b0;
+	reset_alarm = #130000 1'b1;
+	reset_alarm = #20000 1'b0;
+end 
+
+// D
+initial
+begin
+	D = 1'b0;
+	D = #10000 1'b1;
+	D = #500000 1'b0;
+end 
+
+// stop
+initial
+begin
+	stop = 1'b0;
+	stop = #280000 1'b1;
+	stop = #250000 1'b0;
+end 
+endmodule
+

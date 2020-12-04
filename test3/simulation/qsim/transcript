@@ -1,0 +1,31 @@
+# do test3.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:26:03 on Nov 30,2020
+# vlog -work work test3.vo 
+# -- Compiling module test3
+# 
+# Top level modules:
+# 	test3
+# End time: 00:26:03 on Nov 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:26:03 on Nov 30,2020
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module test3_vlg_vec_tst
+# 
+# Top level modules:
+# 	test3_vlg_vec_tst
+# End time: 00:26:03 on Nov 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.test3_vlg_vec_tst 
+# Start time: 00:26:03 on Nov 30,2020
+# Loading work.test3_vlg_vec_tst
+# Loading work.test3
+# Loading cyclonev_ver.cyclonev_io_obuf
+# Loading cyclonev_ver.cyclonev_io_ibuf
+# after#25
+# ** Note: $finish    : Waveform.vwf.vt(44)
+#    Time: 1 us  Iteration: 0  Instance: /test3_vlg_vec_tst
+# End time: 00:26:03 on Nov 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

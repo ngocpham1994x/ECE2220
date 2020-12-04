@@ -1,0 +1,25 @@
+|test4
+R[0] => Q.DATAB
+R[1] => Q.DATAB
+R[2] => Q.DATAB
+R[3] => Q.DATAB
+L => Q.OUTPUTSELECT
+L => Q.OUTPUTSELECT
+L => Q.OUTPUTSELECT
+L => Q.OUTPUTSELECT
+dir => Q.OUTPUTSELECT
+dir => Q.OUTPUTSELECT
+dir => Q.OUTPUTSELECT
+dir => Q.OUTPUTSELECT
+w0 => Q.DATAB
+w1 => Q.DATAA
+clock => Q[0]~reg0.CLK
+clock => Q[1]~reg0.CLK
+clock => Q[2]~reg0.CLK
+clock => Q[3]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

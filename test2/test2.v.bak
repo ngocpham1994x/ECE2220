@@ -1,0 +1,9 @@
+module test2(
+input push_button,
+output push_button_LED
+);
+
+assign push_button_LED = push_button;
+
+
+endmodule

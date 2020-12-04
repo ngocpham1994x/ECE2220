@@ -1,8 +1,8 @@
-module lab08_p(clock,w,reset,clock_1Hz, SSD,reset_LED,w_LED,clock_LED);
+module lab08_p(clock,w,reset,clock_1Hz, SSD,reset_LED,w_LED);
 input clock,w,reset;
 output reg [6:0]SSD; 
 
-output reset_LED,w_LED,clock_LED;  //LEDs to be shown on the board
+output reset_LED,w_LED;  //LEDs to be shown on the board
 
 output clock_1Hz;
 wire [3:0]Dbar;
@@ -12,7 +12,7 @@ reg [3:0]D;
 
 assign w_LED = w;
 assign reset_LED = reset;
-assign clock_LED = clock_1Hz;
+//assign clock_LED = clock_1Hz;
 
 
 //converting internal clock to slower clock
@@ -132,7 +132,7 @@ reg [27:0]count;
 	begin 
 		count = count + 1;      //increment +ve edge counter on every positive edge iteration of the 25MHz inernal clock
 
-		if (count >=50000000) //if the +ve edge counter >= 50 000 000 edges 
+		if (count >=2) //if the +ve edge counter >= 50 000 000 edges 
 
 		begin 
 
