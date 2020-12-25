@@ -1,13 +1,13 @@
 |test5
 internal_clock => internal_clock.IN2
-clock_1s << clock_1s.DB_MAX_OUTPUT_PORT_TYPE
-clock_fast << clock_converter_fast:comb_4.port1
+clock_1s <= clock_1s.DB_MAX_OUTPUT_PORT_TYPE
+clock_fast <= clock_converter_fast:comb_4.port1
 D => test_LED.OUTPUTSELECT
 D => D_LED.DATAIN
-D_LED << D.DB_MAX_OUTPUT_PORT_TYPE
+D_LED <= D.DB_MAX_OUTPUT_PORT_TYPE
 reset_alarm => reset_alarm.IN1
-reset_alarm_LED << reset_alarm.DB_MAX_OUTPUT_PORT_TYPE
-alarm_LED << flipflop:comb_6.port3
+reset_alarm_LED <= reset_alarm.DB_MAX_OUTPUT_PORT_TYPE
+alarm_LED <= flipflop:comb_6.port3
 stop => stop.IN1
 
 

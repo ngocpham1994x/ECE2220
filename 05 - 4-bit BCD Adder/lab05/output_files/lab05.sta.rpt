@@ -1,5 +1,5 @@
 Timing Analyzer report for lab05
-Thu Oct 15 14:51:44 2020
+Thu Dec 24 18:51:41 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -104,9 +104,9 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   2.7%      ;
-;     Processor 3            ;   2.7%      ;
-;     Processor 4            ;   2.7%      ;
+;     Processor 2            ;   2.8%      ;
+;     Processor 3            ;   2.8%      ;
+;     Processor 4            ;   2.8%      ;
 +----------------------------+-------------+
 
 
@@ -774,7 +774,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Thu Oct 15 14:51:35 2020
+    Info: Processing started: Thu Dec 24 18:51:28 2020
 Info: Command: quartus_sta lab05 -c lab05
 Info: qsta_default_script.tcl version: #2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -883,9 +883,9 @@ Info (332146): Worst-case minimum pulse width slack is -0.281
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 5114 megabytes
-    Info: Processing ended: Thu Oct 15 14:51:44 2020
-    Info: Elapsed time: 00:00:09
+    Info: Peak virtual memory: 5111 megabytes
+    Info: Processing ended: Thu Dec 24 18:51:41 2020
+    Info: Elapsed time: 00:00:13
     Info: Total CPU time (on all processors): 00:00:09
 
 

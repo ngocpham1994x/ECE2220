@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab05
-Thu Oct 15 14:50:26 2020
+Thu Dec 24 18:50:02 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -46,7 +46,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Oct 15 14:50:26 2020       ;
+; Analysis & Synthesis Status     ; Successful - Thu Dec 24 18:50:02 2020       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; lab05                                       ;
 ; Top-level Entity Name           ; lab05                                       ;
@@ -324,7 +324,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Thu Oct 15 14:50:07 2020
+    Info: Processing started: Thu Dec 24 18:49:45 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab05 -c lab05
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -426,8 +426,8 @@ Info (21057): Implemented 95 device resources after synthesis - the final resour
     Info (21061): Implemented 45 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 66 warnings
     Info: Peak virtual memory: 4815 megabytes
-    Info: Processing ended: Thu Oct 15 14:50:26 2020
-    Info: Elapsed time: 00:00:19
+    Info: Processing ended: Thu Dec 24 18:50:02 2020
+    Info: Elapsed time: 00:00:17
     Info: Total CPU time (on all processors): 00:00:32
 
 

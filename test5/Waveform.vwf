@@ -20,6 +20,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
@@ -38,6 +39,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script_timing>
 <hdl_lang>verilog</hdl_lang>
 </simulation_settings>*/
@@ -183,9 +185,9 @@ TRANSITION_LIST("reset_alarm")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 130.0;
+		LEVEL 0 FOR 150.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 850.0;
+		LEVEL 0 FOR 830.0;
 	}
 }
 
@@ -194,9 +196,9 @@ TRANSITION_LIST("stop")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 280.0;
-		LEVEL 1 FOR 250.0;
-		LEVEL 0 FOR 470.0;
+		LEVEL 0 FOR 290.0;
+		LEVEL 1 FOR 260.0;
+		LEVEL 0 FOR 450.0;
 	}
 }
 
@@ -220,7 +222,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reset_alarm";
+	CHANNEL = "D";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 2;
@@ -229,7 +231,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "D";
+	CHANNEL = "reset_alarm";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 3;

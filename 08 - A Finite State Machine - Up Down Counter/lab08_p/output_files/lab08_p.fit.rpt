@@ -1,5 +1,5 @@
 Fitter report for lab08_p
-Wed Nov 25 16:35:23 2020
+Thu Dec 24 19:37:39 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -63,7 +63,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Wed Nov 25 16:35:23 2020       ;
+; Fitter Status                   ; Successful - Thu Dec 24 19:37:39 2020       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; lab08_p                                     ;
 ; Top-level Entity Name           ; lab08_p                                     ;
@@ -160,7 +160,7 @@ refer to the applicable agreement for further details.
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.4%      ;
 ;     Processor 3            ;   0.4%      ;
-;     Processor 4            ;   0.4%      ;
+;     Processor 4            ;   0.3%      ;
 +----------------------------+-------------+
 
 
@@ -188,8 +188,8 @@ refer to the applicable agreement for further details.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 142 ) ; 0.00 % ( 0 / 142 )         ; 0.00 % ( 0 / 142 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 142 ) ; 0.00 % ( 0 / 142 )         ; 0.00 % ( 0 / 142 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 140 ) ; 0.00 % ( 0 / 140 )         ; 0.00 % ( 0 / 140 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 140 ) ; 0.00 % ( 0 / 140 )         ; 0.00 % ( 0 / 140 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -212,7 +212,7 @@ refer to the applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 142 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 140 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 0 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -230,12 +230,12 @@ The pin-out file can be found in C:/Users/Ngoc Pham/OneDrive/Documents/Github/EC
 +-------------------------------------------------------------+--------------------+-------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 36 / 41,910        ; < 1 % ;
 ; ALMs needed [=A-B+C]                                        ; 36                 ;       ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 44 / 41,910        ; < 1 % ;
-;         [a] ALMs used for LUT logic and registers           ; 16                 ;       ;
-;         [b] ALMs used for LUT logic                         ; 18                 ;       ;
-;         [c] ALMs used for registers                         ; 10                 ;       ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 38 / 41,910        ; < 1 % ;
+;         [a] ALMs used for LUT logic and registers           ; 19                 ;       ;
+;         [b] ALMs used for LUT logic                         ; 12                 ;       ;
+;         [c] ALMs used for registers                         ; 7                  ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                  ;       ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 8 / 41,910         ; < 1 % ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 2 / 41,910         ; < 1 % ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 41,910         ; 0 %   ;
 ;         [a] Due to location constrained logic               ; 0                  ;       ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                  ;       ;
@@ -248,13 +248,13 @@ The pin-out file can be found in C:/Users/Ngoc Pham/OneDrive/Documents/Github/EC
 ;     -- Logic LABs                                           ; 6                  ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                  ;       ;
 ;                                                             ;                    ;       ;
-; Combinational ALUT usage for logic                          ; 63                 ;       ;
+; Combinational ALUT usage for logic                          ; 61                 ;       ;
 ;     -- 7 input functions                                    ; 0                  ;       ;
-;     -- 6 input functions                                    ; 12                 ;       ;
-;     -- 5 input functions                                    ; 2                  ;       ;
-;     -- 4 input functions                                    ; 18                 ;       ;
-;     -- <=3 input functions                                  ; 31                 ;       ;
-; Combinational ALUT usage for route-throughs                 ; 0                  ;       ;
+;     -- 6 input functions                                    ; 10                 ;       ;
+;     -- 5 input functions                                    ; 1                  ;       ;
+;     -- 4 input functions                                    ; 17                 ;       ;
+;     -- <=3 input functions                                  ; 33                 ;       ;
+; Combinational ALUT usage for route-throughs                 ; 1                  ;       ;
 ;                                                             ;                    ;       ;
 ; Dedicated logic registers                                   ; 52                 ;       ;
 ;     -- By type:                                             ;                    ;       ;
@@ -323,12 +323,12 @@ The pin-out file can be found in C:/Users/Ngoc Pham/OneDrive/Documents/Github/EC
 ; Channel PLLs                                                ; 0 / 9              ; 0 %   ;
 ; Impedance control blocks                                    ; 0 / 4              ; 0 %   ;
 ; Hard Memory Controllers                                     ; 0 / 2              ; 0 %   ;
-; Average interconnect usage (total/H/V)                      ; 0.1% / 0.1% / 0.0% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 1.7% / 2.0% / 0.8% ;       ;
+; Average interconnect usage (total/H/V)                      ; 0.1% / 0.1% / 0.1% ;       ;
+; Peak interconnect usage (total/H/V)                         ; 1.4% / 1.4% / 1.2% ;       ;
 ; Maximum fan-out                                             ; 28                 ;       ;
 ; Highest non-global fan-out                                  ; 28                 ;       ;
-; Total fan-out                                               ; 372                ;       ;
-; Average fan-out                                             ; 2.62               ;       ;
+; Total fan-out                                               ; 357                ;       ;
+; Average fan-out                                             ; 2.53               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -339,12 +339,12 @@ The pin-out file can be found in C:/Users/Ngoc Pham/OneDrive/Documents/Github/EC
 +-------------------------------------------------------------+----------------------+--------------------------------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 36 / 41910 ( < 1 % ) ; 0 / 41910 ( 0 % )              ;
 ; ALMs needed [=A-B+C]                                        ; 36                   ; 0                              ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 44 / 41910 ( < 1 % ) ; 0 / 41910 ( 0 % )              ;
-;         [a] ALMs used for LUT logic and registers           ; 16                   ; 0                              ;
-;         [b] ALMs used for LUT logic                         ; 18                   ; 0                              ;
-;         [c] ALMs used for registers                         ; 10                   ; 0                              ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 38 / 41910 ( < 1 % ) ; 0 / 41910 ( 0 % )              ;
+;         [a] ALMs used for LUT logic and registers           ; 19                   ; 0                              ;
+;         [b] ALMs used for LUT logic                         ; 12                   ; 0                              ;
+;         [c] ALMs used for registers                         ; 7                    ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                    ; 0                              ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 8 / 41910 ( < 1 % )  ; 0 / 41910 ( 0 % )              ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 2 / 41910 ( < 1 % )  ; 0 / 41910 ( 0 % )              ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 41910 ( 0 % )    ; 0 / 41910 ( 0 % )              ;
 ;         [a] Due to location constrained logic               ; 0                    ; 0                              ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                    ; 0                              ;
@@ -357,13 +357,13 @@ The pin-out file can be found in C:/Users/Ngoc Pham/OneDrive/Documents/Github/EC
 ;     -- Logic LABs                                           ; 6                    ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
-; Combinational ALUT usage for logic                          ; 63                   ; 0                              ;
+; Combinational ALUT usage for logic                          ; 61                   ; 0                              ;
 ;     -- 7 input functions                                    ; 0                    ; 0                              ;
-;     -- 6 input functions                                    ; 12                   ; 0                              ;
-;     -- 5 input functions                                    ; 2                    ; 0                              ;
-;     -- 4 input functions                                    ; 18                   ; 0                              ;
-;     -- <=3 input functions                                  ; 31                   ; 0                              ;
-; Combinational ALUT usage for route-throughs                 ; 0                    ; 0                              ;
+;     -- 6 input functions                                    ; 10                   ; 0                              ;
+;     -- 5 input functions                                    ; 1                    ; 0                              ;
+;     -- 4 input functions                                    ; 17                   ; 0                              ;
+;     -- <=3 input functions                                  ; 33                   ; 0                              ;
+; Combinational ALUT usage for route-throughs                 ; 1                    ; 0                              ;
 ; Memory ALUT usage                                           ; 0                    ; 0                              ;
 ;     -- 64-address deep                                      ; 0                    ; 0                              ;
 ;     -- 32-address deep                                      ; 0                    ; 0                              ;
@@ -391,7 +391,7 @@ The pin-out file can be found in C:/Users/Ngoc Pham/OneDrive/Documents/Github/EC
 ;     -- Registered Output Connections                        ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Internal Connections                                        ;                      ;                                ;
-;     -- Total Connections                                    ; 372                  ; 0                              ;
+;     -- Total Connections                                    ; 357                  ; 0                              ;
 ;     -- Registered Connections                               ; 98                   ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; External Connections                                        ;                      ;                                ;
@@ -1402,8 +1402,8 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node  ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name             ; Entity Name     ; Library Name ;
 +-----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------------------+-----------------+--------------+
-; |lab08_p                    ; 36.0 (15.0)          ; 44.0 (20.0)                      ; 8.0 (5.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 63 (25)             ; 52 (23)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 13   ; 0            ; |lab08_p                        ; lab08_p         ; work         ;
-;    |clock_converter:comb_5| ; 21.0 (21.0)          ; 24.0 (24.0)                      ; 3.0 (3.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 38 (38)             ; 29 (29)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab08_p|clock_converter:comb_5 ; clock_converter ; work         ;
+; |lab08_p                    ; 36.0 (15.5)          ; 38.0 (17.5)                      ; 2.0 (2.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 61 (25)             ; 52 (23)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 13   ; 0            ; |lab08_p                        ; lab08_p         ; work         ;
+;    |clock_converter:comb_5| ; 20.5 (20.5)          ; 20.5 (20.5)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 36 (36)             ; 29 (29)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab08_p|clock_converter:comb_5 ; clock_converter ; work         ;
 +-----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1486,8 +1486,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------+--------------------+---------+-------------+--------+----------------------+------------------+---------------------------+
 ; clock                              ; PIN_Y26            ; 2       ; Clock       ; no     ; --                   ; --               ; --                        ;
 ; clock                              ; PIN_Y26            ; 28      ; Clock       ; yes    ; Global Clock         ; GCLK10           ; --                        ;
-; clock_converter:comb_5|LessThan0~8 ; LABCELL_X64_Y1_N57 ; 28      ; Sync. clear ; no     ; --                   ; --               ; --                        ;
-; clock_converter:comb_5|clock_1Hz   ; FF_X64_Y2_N53      ; 25      ; Clock       ; no     ; --                   ; --               ; --                        ;
+; clock_converter:comb_5|LessThan0~6 ; LABCELL_X85_Y19_N0 ; 28      ; Sync. clear ; no     ; --                   ; --               ; --                        ;
+; clock_converter:comb_5|clock_1Hz   ; FF_X85_Y19_N35     ; 25      ; Clock       ; no     ; --                   ; --               ; --                        ;
 ; reset                              ; PIN_AA30           ; 19      ; Sync. clear ; no     ; --                   ; --               ; --                        ;
 +------------------------------------+--------------------+---------+-------------+--------+----------------------+------------------+---------------------------+
 
@@ -1506,14 +1506,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+-------------------------+
 ; Routing Resource Type                       ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Block interconnects                         ; 138 / 289,320 ( < 1 % ) ;
-; C12 interconnects                           ; 5 / 13,420 ( < 1 % )    ;
-; C2 interconnects                            ; 36 / 119,108 ( < 1 % )  ;
-; C4 interconnects                            ; 23 / 56,300 ( < 1 % )   ;
+; Block interconnects                         ; 122 / 289,320 ( < 1 % ) ;
+; C12 interconnects                           ; 10 / 13,420 ( < 1 % )   ;
+; C2 interconnects                            ; 32 / 119,108 ( < 1 % )  ;
+; C4 interconnects                            ; 39 / 56,300 ( < 1 % )   ;
 ; DQS bus muxes                               ; 0 / 25 ( 0 % )          ;
 ; DQS-18 I/O buses                            ; 0 / 25 ( 0 % )          ;
 ; DQS-9 I/O buses                             ; 0 / 25 ( 0 % )          ;
-; Direct links                                ; 28 / 289,320 ( < 1 % )  ;
+; Direct links                                ; 15 / 289,320 ( < 1 % )  ;
 ; Global clocks                               ; 1 / 16 ( 6 % )          ;
 ; HPS SDRAM PLL inputs                        ; 0 / 1 ( 0 % )           ;
 ; HPS SDRAM PLL outputs                       ; 0 / 1 ( 0 % )           ;
@@ -1569,13 +1569,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HPS_INTERFACE_TPIU_TRACE_INPUTs             ; 0 / 2 ( 0 % )           ;
 ; HPS_INTERFACE_TPIU_TRACE_OUTPUTs            ; 0 / 33 ( 0 % )          ;
 ; Horizontal periphery clocks                 ; 0 / 72 ( 0 % )          ;
-; Local interconnects                         ; 39 / 84,580 ( < 1 % )   ;
+; Local interconnects                         ; 38 / 84,580 ( < 1 % )   ;
 ; Quadrant clocks                             ; 0 / 66 ( 0 % )          ;
-; R14 interconnects                           ; 24 / 12,676 ( < 1 % )   ;
-; R14/C12 interconnect drivers                ; 28 / 20,720 ( < 1 % )   ;
-; R3 interconnects                            ; 84 / 130,992 ( < 1 % )  ;
-; R6 interconnects                            ; 80 / 266,960 ( < 1 % )  ;
-; Spine clocks                                ; 1 / 360 ( < 1 % )       ;
+; R14 interconnects                           ; 40 / 12,676 ( < 1 % )   ;
+; R14/C12 interconnect drivers                ; 49 / 20,720 ( < 1 % )   ;
+; R3 interconnects                            ; 82 / 130,992 ( < 1 % )  ;
+; R6 interconnects                            ; 70 / 266,960 ( < 1 % )  ;
+; Spine clocks                                ; 2 / 360 ( < 1 % )       ;
 ; Wire stub REs                               ; 0 / 15,858 ( 0 % )      ;
 +---------------------------------------------+-------------------------+
 
@@ -1703,9 +1703,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------+----------------------------------+-------------------+
 ; Source Clock(s)                      ; Destination Clock(s)             ; Delay Added in ns ;
 +--------------------------------------+----------------------------------+-------------------+
-; clock_converter:comb_5|clock_1Hz,I/O ; clock_converter:comb_5|clock_1Hz ; 26.6              ;
-; clock_converter:comb_5|clock_1Hz     ; clock_converter:comb_5|clock_1Hz ; 25.8              ;
-; clock                                ; clock                            ; 8.5               ;
+; clock_converter:comb_5|clock_1Hz     ; clock_converter:comb_5|clock_1Hz ; 29.5              ;
+; clock_converter:comb_5|clock_1Hz,I/O ; clock_converter:comb_5|clock_1Hz ; 20.2              ;
+; clock                                ; clock                            ; 5.5               ;
 +--------------------------------------+----------------------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
@@ -1716,53 +1716,53 @@ This will disable optimization of problematic paths and expose them for further 
 +----------------------------------+----------------------------------+-------------------+
 ; Source Register                  ; Destination Register             ; Delay Added in ns ;
 +----------------------------------+----------------------------------+-------------------+
-; clock_converter:comb_5|clock_1Hz ; clock_converter:comb_5|clock_1Hz ; 6.501             ;
-; clock_converter:comb_5|count[25] ; clock_converter:comb_5|clock_1Hz ; 2.123             ;
-; clock_converter:comb_5|count[26] ; clock_converter:comb_5|clock_1Hz ; 2.120             ;
-; clock_converter:comb_5|count[22] ; clock_converter:comb_5|clock_1Hz ; 2.097             ;
-; clock_converter:comb_5|count[17] ; clock_converter:comb_5|clock_1Hz ; 2.086             ;
-; clock_converter:comb_5|count[23] ; clock_converter:comb_5|clock_1Hz ; 2.086             ;
-; clock_converter:comb_5|count[18] ; clock_converter:comb_5|clock_1Hz ; 2.072             ;
-; clock_converter:comb_5|count[19] ; clock_converter:comb_5|clock_1Hz ; 2.056             ;
-; clock_converter:comb_5|count[16] ; clock_converter:comb_5|clock_1Hz ; 2.054             ;
-; clock_converter:comb_5|count[15] ; clock_converter:comb_5|clock_1Hz ; 2.043             ;
-; clock_converter:comb_5|count[27] ; clock_converter:comb_5|clock_1Hz ; 2.017             ;
-; clock_converter:comb_5|count[13] ; clock_converter:comb_5|clock_1Hz ; 1.998             ;
-; clock_converter:comb_5|count[20] ; clock_converter:comb_5|clock_1Hz ; 1.990             ;
-; clock_converter:comb_5|count[24] ; clock_converter:comb_5|clock_1Hz ; 1.924             ;
-; clock_converter:comb_5|count[21] ; clock_converter:comb_5|clock_1Hz ; 1.909             ;
-; clock_converter:comb_5|count[7]  ; clock_converter:comb_5|clock_1Hz ; 1.896             ;
-; clock_converter:comb_5|count[8]  ; clock_converter:comb_5|clock_1Hz ; 1.896             ;
-; clock_converter:comb_5|count[9]  ; clock_converter:comb_5|clock_1Hz ; 1.896             ;
-; clock_converter:comb_5|count[10] ; clock_converter:comb_5|clock_1Hz ; 1.896             ;
-; clock_converter:comb_5|count[11] ; clock_converter:comb_5|clock_1Hz ; 1.896             ;
-; clock_converter:comb_5|count[14] ; clock_converter:comb_5|clock_1Hz ; 1.896             ;
-; clock_converter:comb_5|count[4]  ; clock_converter:comb_5|clock_1Hz ; 1.896             ;
-; clock_converter:comb_5|count[5]  ; clock_converter:comb_5|clock_1Hz ; 1.896             ;
-; clock_converter:comb_5|count[6]  ; clock_converter:comb_5|clock_1Hz ; 1.896             ;
-; clock_converter:comb_5|count[12] ; clock_converter:comb_5|clock_1Hz ; 1.896             ;
-; clock_converter:comb_5|count[1]  ; clock_converter:comb_5|clock_1Hz ; 1.896             ;
-; clock_converter:comb_5|count[2]  ; clock_converter:comb_5|clock_1Hz ; 1.896             ;
-; clock_converter:comb_5|count[3]  ; clock_converter:comb_5|clock_1Hz ; 1.896             ;
-; clock_converter:comb_5|count[0]  ; clock_converter:comb_5|clock_1Hz ; 1.896             ;
-; d.0110                           ; SSD[1]~reg0                      ; 1.359             ;
-; d.0100                           ; SSD[1]~reg0                      ; 1.359             ;
-; d.1000                           ; SSD[5]~reg0                      ; 1.359             ;
-; d.1110                           ; SSD[3]~reg0                      ; 1.357             ;
-; d.1010                           ; SSD[3]~reg0                      ; 1.344             ;
-; d.1111                           ; d.0000                           ; 1.337             ;
-; d.0000                           ; SSD[3]~reg0                      ; 1.305             ;
-; d.1001                           ; d.1000                           ; 1.303             ;
-; d.0111                           ; d.1000                           ; 1.300             ;
-; d.0001                           ; SSD[2]~reg0                      ; 1.299             ;
-; d.0011                           ; SSD[3]~reg0                      ; 1.298             ;
-; d.0101                           ; SSD[3]~reg0                      ; 1.296             ;
-; d.1100                           ; SSD[0]~reg0                      ; 1.294             ;
-; d.1011                           ; SSD[1]~reg0                      ; 1.281             ;
-; d.1101                           ; SSD[1]~reg0                      ; 1.275             ;
-; d.0010                           ; SSD[5]~reg0                      ; 1.245             ;
-; w                                ; SSD[3]~reg0                      ; 0.759             ;
-; reset                            ; SSD[3]~reg0                      ; 0.759             ;
+; clock_converter:comb_5|clock_1Hz ; clock_converter:comb_5|clock_1Hz ; 5.509             ;
+; clock_converter:comb_5|count[17] ; clock_converter:comb_5|clock_1Hz ; 1.719             ;
+; clock_converter:comb_5|count[5]  ; clock_converter:comb_5|clock_1Hz ; 1.698             ;
+; clock_converter:comb_5|count[4]  ; clock_converter:comb_5|clock_1Hz ; 1.698             ;
+; clock_converter:comb_5|count[3]  ; clock_converter:comb_5|clock_1Hz ; 1.698             ;
+; clock_converter:comb_5|count[2]  ; clock_converter:comb_5|clock_1Hz ; 1.698             ;
+; clock_converter:comb_5|count[1]  ; clock_converter:comb_5|clock_1Hz ; 1.698             ;
+; clock_converter:comb_5|count[27] ; clock_converter:comb_5|clock_1Hz ; 1.698             ;
+; clock_converter:comb_5|count[22] ; clock_converter:comb_5|clock_1Hz ; 1.698             ;
+; clock_converter:comb_5|count[18] ; clock_converter:comb_5|clock_1Hz ; 1.698             ;
+; clock_converter:comb_5|count[19] ; clock_converter:comb_5|clock_1Hz ; 1.698             ;
+; clock_converter:comb_5|count[20] ; clock_converter:comb_5|clock_1Hz ; 1.698             ;
+; clock_converter:comb_5|count[21] ; clock_converter:comb_5|clock_1Hz ; 1.698             ;
+; clock_converter:comb_5|count[16] ; clock_converter:comb_5|clock_1Hz ; 1.698             ;
+; clock_converter:comb_5|count[15] ; clock_converter:comb_5|clock_1Hz ; 1.698             ;
+; clock_converter:comb_5|count[11] ; clock_converter:comb_5|clock_1Hz ; 1.698             ;
+; clock_converter:comb_5|count[6]  ; clock_converter:comb_5|clock_1Hz ; 1.698             ;
+; clock_converter:comb_5|count[7]  ; clock_converter:comb_5|clock_1Hz ; 1.698             ;
+; clock_converter:comb_5|count[8]  ; clock_converter:comb_5|clock_1Hz ; 1.698             ;
+; clock_converter:comb_5|count[9]  ; clock_converter:comb_5|clock_1Hz ; 1.698             ;
+; clock_converter:comb_5|count[10] ; clock_converter:comb_5|clock_1Hz ; 1.698             ;
+; clock_converter:comb_5|count[12] ; clock_converter:comb_5|clock_1Hz ; 1.698             ;
+; clock_converter:comb_5|count[13] ; clock_converter:comb_5|clock_1Hz ; 1.698             ;
+; clock_converter:comb_5|count[14] ; clock_converter:comb_5|clock_1Hz ; 1.698             ;
+; clock_converter:comb_5|count[26] ; clock_converter:comb_5|clock_1Hz ; 1.698             ;
+; clock_converter:comb_5|count[25] ; clock_converter:comb_5|clock_1Hz ; 1.698             ;
+; clock_converter:comb_5|count[24] ; clock_converter:comb_5|clock_1Hz ; 1.698             ;
+; clock_converter:comb_5|count[23] ; clock_converter:comb_5|clock_1Hz ; 1.698             ;
+; clock_converter:comb_5|count[0]  ; clock_converter:comb_5|clock_1Hz ; 1.698             ;
+; d.1001                           ; d.1000                           ; 1.383             ;
+; d.1000                           ; SSD[4]~reg0                      ; 1.353             ;
+; d.1010                           ; SSD[4]~reg0                      ; 1.352             ;
+; d.0110                           ; SSD[4]~reg0                      ; 1.347             ;
+; d.0111                           ; d.1000                           ; 1.325             ;
+; d.0000                           ; SSD[3]~reg0                      ; 1.321             ;
+; d.1100                           ; SSD[5]~reg0                      ; 1.318             ;
+; d.1111                           ; d.0000                           ; 1.315             ;
+; d.1110                           ; SSD[5]~reg0                      ; 1.311             ;
+; d.1101                           ; SSD[2]~reg0                      ; 1.302             ;
+; d.0001                           ; d.0000                           ; 1.294             ;
+; d.0011                           ; SSD[3]~reg0                      ; 1.290             ;
+; d.1011                           ; SSD[2]~reg0                      ; 1.282             ;
+; d.0010                           ; SSD[6]~reg0                      ; 1.277             ;
+; d.0101                           ; SSD[1]~reg0                      ; 1.241             ;
+; d.0100                           ; SSD[5]~reg0                      ; 1.180             ;
+; w                                ; SSD[5]~reg0                      ; 0.735             ;
+; reset                            ; SSD[5]~reg0                      ; 0.735             ;
 +----------------------------------+----------------------------------+-------------------+
 Note: This table only shows the top 47 path(s) that have the largest delay added for hold.
 
@@ -1795,17 +1795,17 @@ Warning (15705): Ignored locations or region assignments to the following nodes
 Info (11798): Fitter preparation operations ending: elapsed time is 00:00:16
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:02
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:02
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X56_Y0 to location X66_Y10
+    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X78_Y11 to location X89_Y22
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:03
-Info (11888): Total time spent on timing analysis during the Fitter is 0.42 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:04
+Info (11888): Total time spent on timing analysis during the Fitter is 0.48 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1814,10 +1814,10 @@ Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:04
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/Ngoc Pham/OneDrive/Documents/Github/ECE2220/08 - A Finite State Machine - Up Down Counter/lab08_p/output_files/lab08_p.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 6490 megabytes
-    Info: Processing ended: Wed Nov 25 16:35:24 2020
-    Info: Elapsed time: 00:00:47
-    Info: Total CPU time (on all processors): 00:01:11
+    Info: Peak virtual memory: 6529 megabytes
+    Info: Processing ended: Thu Dec 24 19:37:40 2020
+    Info: Elapsed time: 00:00:50
+    Info: Total CPU time (on all processors): 00:01:13
 
 
 +----------------------------+

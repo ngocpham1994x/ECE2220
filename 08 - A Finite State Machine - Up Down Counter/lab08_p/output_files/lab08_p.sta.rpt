@@ -1,5 +1,5 @@
 Timing Analyzer report for lab08_p
-Wed Nov 25 16:35:46 2020
+Thu Dec 24 19:38:04 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -104,8 +104,8 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   3.2%      ;
-;     Processor 3            ;   3.0%      ;
+;     Processor 2            ;   3.1%      ;
+;     Processor 3            ;   2.9%      ;
 ;     Processor 4            ;   2.9%      ;
 +----------------------------+-------------+
 
@@ -125,8 +125,8 @@ refer to the applicable agreement for further details.
 +------------+-----------------+----------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                       ; Note ;
 +------------+-----------------+----------------------------------+------+
-; 138.45 MHz ; 138.45 MHz      ; clock                            ;      ;
-; 324.89 MHz ; 324.89 MHz      ; clock_converter:comb_5|clock_1Hz ;      ;
+; 122.9 MHz  ; 122.9 MHz       ; clock                            ;      ;
+; 316.46 MHz ; 316.46 MHz      ; clock_converter:comb_5|clock_1Hz ;      ;
 +------------+-----------------+----------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -142,8 +142,8 @@ HTML report is unavailable in plain text report export.
 +----------------------------------+--------+---------------+
 ; Clock                            ; Slack  ; End Point TNS ;
 +----------------------------------+--------+---------------+
-; clock                            ; -6.223 ; -123.724      ;
-; clock_converter:comb_5|clock_1Hz ; -2.078 ; -38.224       ;
+; clock                            ; -7.137 ; -152.202      ;
+; clock_converter:comb_5|clock_1Hz ; -2.160 ; -38.898       ;
 +----------------------------------+--------+---------------+
 
 
@@ -152,8 +152,8 @@ HTML report is unavailable in plain text report export.
 +----------------------------------+-------+---------------+
 ; Clock                            ; Slack ; End Point TNS ;
 +----------------------------------+-------+---------------+
-; clock                            ; 0.470 ; 0.000         ;
-; clock_converter:comb_5|clock_1Hz ; 0.917 ; 0.000         ;
+; clock                            ; 0.377 ; 0.000         ;
+; clock_converter:comb_5|clock_1Hz ; 0.815 ; 0.000         ;
 +----------------------------------+-------+---------------+
 
 
@@ -174,8 +174,8 @@ No paths to report.
 +----------------------------------+--------+---------------+
 ; Clock                            ; Slack  ; End Point TNS ;
 +----------------------------------+--------+---------------+
-; clock                            ; -0.394 ; -15.416       ;
-; clock_converter:comb_5|clock_1Hz ; -0.394 ; -12.408       ;
+; clock                            ; -0.437 ; -15.496       ;
+; clock_converter:comb_5|clock_1Hz ; -0.394 ; -12.226       ;
 +----------------------------------+--------+---------------+
 
 
@@ -190,8 +190,8 @@ No synchronizer chains to report.
 +------------+-----------------+----------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                       ; Note ;
 +------------+-----------------+----------------------------------+------+
-; 133.35 MHz ; 133.35 MHz      ; clock                            ;      ;
-; 330.47 MHz ; 330.47 MHz      ; clock_converter:comb_5|clock_1Hz ;      ;
+; 119.35 MHz ; 119.35 MHz      ; clock                            ;      ;
+; 316.76 MHz ; 316.76 MHz      ; clock_converter:comb_5|clock_1Hz ;      ;
 +------------+-----------------+----------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -201,8 +201,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------------------------------+--------+---------------+
 ; Clock                            ; Slack  ; End Point TNS ;
 +----------------------------------+--------+---------------+
-; clock                            ; -6.499 ; -124.944      ;
-; clock_converter:comb_5|clock_1Hz ; -2.026 ; -37.771       ;
+; clock                            ; -7.379 ; -154.086      ;
+; clock_converter:comb_5|clock_1Hz ; -2.157 ; -38.425       ;
 +----------------------------------+--------+---------------+
 
 
@@ -211,8 +211,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------------------------------+-------+---------------+
 ; Clock                            ; Slack ; End Point TNS ;
 +----------------------------------+-------+---------------+
-; clock                            ; 0.455 ; 0.000         ;
-; clock_converter:comb_5|clock_1Hz ; 0.881 ; 0.000         ;
+; clock                            ; 0.377 ; 0.000         ;
+; clock_converter:comb_5|clock_1Hz ; 0.770 ; 0.000         ;
 +----------------------------------+-------+---------------+
 
 
@@ -233,8 +233,8 @@ No paths to report.
 +----------------------------------+--------+---------------+
 ; Clock                            ; Slack  ; End Point TNS ;
 +----------------------------------+--------+---------------+
-; clock                            ; -0.407 ; -17.002       ;
-; clock_converter:comb_5|clock_1Hz ; -0.394 ; -12.279       ;
+; clock                            ; -0.417 ; -17.075       ;
+; clock_converter:comb_5|clock_1Hz ; -0.394 ; -12.072       ;
 +----------------------------------+--------+---------------+
 
 
@@ -249,8 +249,8 @@ No synchronizer chains to report.
 +----------------------------------+--------+---------------+
 ; Clock                            ; Slack  ; End Point TNS ;
 +----------------------------------+--------+---------------+
-; clock                            ; -3.708 ; -57.674       ;
-; clock_converter:comb_5|clock_1Hz ; -1.058 ; -17.237       ;
+; clock                            ; -3.772 ; -73.271       ;
+; clock_converter:comb_5|clock_1Hz ; -1.038 ; -17.780       ;
 +----------------------------------+--------+---------------+
 
 
@@ -259,8 +259,8 @@ No synchronizer chains to report.
 +----------------------------------+-------+---------------+
 ; Clock                            ; Slack ; End Point TNS ;
 +----------------------------------+-------+---------------+
-; clock                            ; 0.260 ; 0.000         ;
-; clock_converter:comb_5|clock_1Hz ; 0.462 ; 0.000         ;
+; clock                            ; 0.201 ; 0.000         ;
+; clock_converter:comb_5|clock_1Hz ; 0.427 ; 0.000         ;
 +----------------------------------+-------+---------------+
 
 
@@ -281,8 +281,8 @@ No paths to report.
 +----------------------------------+--------+---------------+
 ; Clock                            ; Slack  ; End Point TNS ;
 +----------------------------------+--------+---------------+
-; clock                            ; -0.441 ; -2.725        ;
-; clock_converter:comb_5|clock_1Hz ; 0.076  ; 0.000         ;
+; clock                            ; -0.461 ; -2.818        ;
+; clock_converter:comb_5|clock_1Hz ; 0.090  ; 0.000         ;
 +----------------------------------+--------+---------------+
 
 
@@ -297,8 +297,8 @@ No synchronizer chains to report.
 +----------------------------------+--------+---------------+
 ; Clock                            ; Slack  ; End Point TNS ;
 +----------------------------------+--------+---------------+
-; clock                            ; -3.152 ; -51.783       ;
-; clock_converter:comb_5|clock_1Hz ; -0.896 ; -14.649       ;
+; clock                            ; -3.510 ; -67.090       ;
+; clock_converter:comb_5|clock_1Hz ; -0.899 ; -15.138       ;
 +----------------------------------+--------+---------------+
 
 
@@ -307,8 +307,8 @@ No synchronizer chains to report.
 +----------------------------------+-------+---------------+
 ; Clock                            ; Slack ; End Point TNS ;
 +----------------------------------+-------+---------------+
-; clock                            ; 0.240 ; 0.000         ;
-; clock_converter:comb_5|clock_1Hz ; 0.403 ; 0.000         ;
+; clock                            ; 0.192 ; 0.000         ;
+; clock_converter:comb_5|clock_1Hz ; 0.372 ; 0.000         ;
 +----------------------------------+-------+---------------+
 
 
@@ -329,8 +329,8 @@ No paths to report.
 +----------------------------------+--------+---------------+
 ; Clock                            ; Slack  ; End Point TNS ;
 +----------------------------------+--------+---------------+
-; clock                            ; -0.447 ; -2.729        ;
-; clock_converter:comb_5|clock_1Hz ; 0.090  ; 0.000         ;
+; clock                            ; -0.421 ; -2.660        ;
+; clock_converter:comb_5|clock_1Hz ; 0.101  ; 0.000         ;
 +----------------------------------+--------+---------------+
 
 
@@ -345,12 +345,12 @@ No synchronizer chains to report.
 +-----------------------------------+----------+-------+----------+---------+---------------------+
 ; Clock                             ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +-----------------------------------+----------+-------+----------+---------+---------------------+
-; Worst-case Slack                  ; -6.499   ; 0.240 ; N/A      ; N/A     ; -0.447              ;
-;  clock                            ; -6.499   ; 0.240 ; N/A      ; N/A     ; -0.447              ;
-;  clock_converter:comb_5|clock_1Hz ; -2.078   ; 0.403 ; N/A      ; N/A     ; -0.394              ;
-; Design-wide TNS                   ; -162.715 ; 0.0   ; 0.0      ; 0.0     ; -29.281             ;
-;  clock                            ; -124.944 ; 0.000 ; N/A      ; N/A     ; -17.002             ;
-;  clock_converter:comb_5|clock_1Hz ; -38.224  ; 0.000 ; N/A      ; N/A     ; -12.408             ;
+; Worst-case Slack                  ; -7.379   ; 0.192 ; N/A      ; N/A     ; -0.461              ;
+;  clock                            ; -7.379   ; 0.192 ; N/A      ; N/A     ; -0.461              ;
+;  clock_converter:comb_5|clock_1Hz ; -2.160   ; 0.372 ; N/A      ; N/A     ; -0.394              ;
+; Design-wide TNS                   ; -192.511 ; 0.0   ; 0.0      ; 0.0     ; -29.147             ;
+;  clock                            ; -154.086 ; 0.000 ; N/A      ; N/A     ; -17.075             ;
+;  clock_converter:comb_5|clock_1Hz ; -38.898  ; 0.000 ; N/A      ; N/A     ; -12.226             ;
 +-----------------------------------+----------+-------+----------+---------+---------------------+
 
 
@@ -460,7 +460,7 @@ No synchronizer chains to report.
 +----------------------------------+----------------------------------+----------+----------+----------+----------+
 ; From Clock                       ; To Clock                         ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +----------------------------------+----------------------------------+----------+----------+----------+----------+
-; clock                            ; clock                            ; 12151    ; 0        ; 0        ; 0        ;
+; clock                            ; clock                            ; 12789    ; 0        ; 0        ; 0        ;
 ; clock_converter:comb_5|clock_1Hz ; clock                            ; 1        ; 1        ; 0        ; 0        ;
 ; clock_converter:comb_5|clock_1Hz ; clock_converter:comb_5|clock_1Hz ; 102      ; 0        ; 0        ; 0        ;
 +----------------------------------+----------------------------------+----------+----------+----------+----------+
@@ -472,7 +472,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +----------------------------------+----------------------------------+----------+----------+----------+----------+
 ; From Clock                       ; To Clock                         ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +----------------------------------+----------------------------------+----------+----------+----------+----------+
-; clock                            ; clock                            ; 12151    ; 0        ; 0        ; 0        ;
+; clock                            ; clock                            ; 12789    ; 0        ; 0        ; 0        ;
 ; clock_converter:comb_5|clock_1Hz ; clock                            ; 1        ; 1        ; 0        ; 0        ;
 ; clock_converter:comb_5|clock_1Hz ; clock_converter:comb_5|clock_1Hz ; 102      ; 0        ; 0        ; 0        ;
 +----------------------------------+----------------------------------+----------+----------+----------+----------+
@@ -577,7 +577,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Wed Nov 25 16:35:39 2020
+    Info: Processing started: Thu Dec 24 19:37:56 2020
 Info: Command: quartus_sta lab08_p -c lab08_p
 Info: qsta_default_script.tcl version: #2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -595,96 +595,96 @@ Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -6.223
+Info (332146): Worst-case setup slack is -7.137
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -6.223            -123.724 clock 
-    Info (332119):    -2.078             -38.224 clock_converter:comb_5|clock_1Hz 
-Info (332146): Worst-case hold slack is 0.470
+    Info (332119):    -7.137            -152.202 clock 
+    Info (332119):    -2.160             -38.898 clock_converter:comb_5|clock_1Hz 
+Info (332146): Worst-case hold slack is 0.377
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.470               0.000 clock 
-    Info (332119):     0.917               0.000 clock_converter:comb_5|clock_1Hz 
+    Info (332119):     0.377               0.000 clock 
+    Info (332119):     0.815               0.000 clock_converter:comb_5|clock_1Hz 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.394
+Info (332146): Worst-case minimum pulse width slack is -0.437
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.394             -15.416 clock 
-    Info (332119):    -0.394             -12.408 clock_converter:comb_5|clock_1Hz 
+    Info (332119):    -0.437             -15.496 clock 
+    Info (332119):    -0.394             -12.226 clock_converter:comb_5|clock_1Hz 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -6.499
+Info (332146): Worst-case setup slack is -7.379
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -6.499            -124.944 clock 
-    Info (332119):    -2.026             -37.771 clock_converter:comb_5|clock_1Hz 
-Info (332146): Worst-case hold slack is 0.455
+    Info (332119):    -7.379            -154.086 clock 
+    Info (332119):    -2.157             -38.425 clock_converter:comb_5|clock_1Hz 
+Info (332146): Worst-case hold slack is 0.377
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.455               0.000 clock 
-    Info (332119):     0.881               0.000 clock_converter:comb_5|clock_1Hz 
+    Info (332119):     0.377               0.000 clock 
+    Info (332119):     0.770               0.000 clock_converter:comb_5|clock_1Hz 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.407
+Info (332146): Worst-case minimum pulse width slack is -0.417
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.407             -17.002 clock 
-    Info (332119):    -0.394             -12.279 clock_converter:comb_5|clock_1Hz 
+    Info (332119):    -0.417             -17.075 clock 
+    Info (332119):    -0.394             -12.072 clock_converter:comb_5|clock_1Hz 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -3.708
+Info (332146): Worst-case setup slack is -3.772
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.708             -57.674 clock 
-    Info (332119):    -1.058             -17.237 clock_converter:comb_5|clock_1Hz 
-Info (332146): Worst-case hold slack is 0.260
+    Info (332119):    -3.772             -73.271 clock 
+    Info (332119):    -1.038             -17.780 clock_converter:comb_5|clock_1Hz 
+Info (332146): Worst-case hold slack is 0.201
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.260               0.000 clock 
-    Info (332119):     0.462               0.000 clock_converter:comb_5|clock_1Hz 
+    Info (332119):     0.201               0.000 clock 
+    Info (332119):     0.427               0.000 clock_converter:comb_5|clock_1Hz 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.441
+Info (332146): Worst-case minimum pulse width slack is -0.461
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.441              -2.725 clock 
-    Info (332119):     0.076               0.000 clock_converter:comb_5|clock_1Hz 
+    Info (332119):    -0.461              -2.818 clock 
+    Info (332119):     0.090               0.000 clock_converter:comb_5|clock_1Hz 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -3.152
+Info (332146): Worst-case setup slack is -3.510
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.152             -51.783 clock 
-    Info (332119):    -0.896             -14.649 clock_converter:comb_5|clock_1Hz 
-Info (332146): Worst-case hold slack is 0.240
+    Info (332119):    -3.510             -67.090 clock 
+    Info (332119):    -0.899             -15.138 clock_converter:comb_5|clock_1Hz 
+Info (332146): Worst-case hold slack is 0.192
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.240               0.000 clock 
-    Info (332119):     0.403               0.000 clock_converter:comb_5|clock_1Hz 
+    Info (332119):     0.192               0.000 clock 
+    Info (332119):     0.372               0.000 clock_converter:comb_5|clock_1Hz 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.447
+Info (332146): Worst-case minimum pulse width slack is -0.421
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.447              -2.729 clock 
-    Info (332119):     0.090               0.000 clock_converter:comb_5|clock_1Hz 
+    Info (332119):    -0.421              -2.660 clock 
+    Info (332119):     0.101               0.000 clock_converter:comb_5|clock_1Hz 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5089 megabytes
-    Info: Processing ended: Wed Nov 25 16:35:46 2020
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Peak virtual memory: 5114 megabytes
+    Info: Processing ended: Thu Dec 24 19:38:04 2020
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:08
 
 

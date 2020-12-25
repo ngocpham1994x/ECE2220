@@ -49,7 +49,7 @@ reg [27:0]count;
 	begin 
 		count <= count + 1;      //increment +ve edge counter on every positive edge iteration of the 25MHz inernal clock
 
-		if (count >=25_000_000) //if the +ve edge counter >= 50 000 000 edges 
+		if (count >=3) //if the +ve edge counter >= 50 000 000 edges 
 
 		begin 
 
@@ -74,7 +74,7 @@ reg [27:0]count;
 	begin 
 		count <= count + 1;      //increment +ve edge counter on every positive edge iteration of the 25MHz inernal clock
 
-		if (count >=5_000_000) //if the +ve edge counter >= 50 000 000 edges 
+		if (count >=2) //if the +ve edge counter >= 50 000 000 edges 
 
 		begin 
 
