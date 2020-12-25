@@ -1,5 +1,3 @@
 ECE2220
 
-Playlist of all labs:
-
-https://www.youtube.com/watch?v=MkvnIeJDoMo&list=PL25XFi5JMg378e_yVpbTlfzEJrUcrogA_
+Find video playlist of all labs [here](https://www.youtube.com/watch?v=MkvnIeJDoMo&list=PL25XFi5JMg378e_yVpbTlfzEJrUcrogA_)
